@@ -1,0 +1,6 @@
+framework module Pods_Pitaza170 {
+  umbrella header "Pods-Pitaza170-umbrella.h"
+
+  export *
+  module * { export * }
+}

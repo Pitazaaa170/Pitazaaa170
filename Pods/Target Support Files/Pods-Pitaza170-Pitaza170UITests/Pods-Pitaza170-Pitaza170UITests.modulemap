@@ -1,0 +1,6 @@
+framework module Pods_Pitaza170_Pitaza170UITests {
+  umbrella header "Pods-Pitaza170-Pitaza170UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

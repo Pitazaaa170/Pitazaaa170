@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02DA1C60F6409F8DA5500FE5 /* Pods_Pitaza170_Pitaza170UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E766F820096CED64B759B7 /* Pods_Pitaza170_Pitaza170UITests.framework */; };
 		2C8F273D2927F67F0014B007 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F273C2927F67F0014B007 /* AppDelegate.swift */; };
 		2C8F273F2927F67F0014B007 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F273E2927F67F0014B007 /* SceneDelegate.swift */; };
 		2C8F27412927F67F0014B007 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F27402927F67F0014B007 /* ViewController.swift */; };
-		2C8F27442927F67F0014B007 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8F27422927F67F0014B007 /* Main.storyboard */; };
 		2C8F27462927F6810014B007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C8F27452927F6810014B007 /* Assets.xcassets */; };
 		2C8F27492927F6810014B007 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8F27472927F6810014B007 /* LaunchScreen.storyboard */; };
 		2C8F27542927F6810014B007 /* Pitaza170Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F27532927F6810014B007 /* Pitaza170Tests.swift */; };
 		2C8F275E2927F6810014B007 /* Pitaza170UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F275D2927F6810014B007 /* Pitaza170UITests.swift */; };
 		2C8F27602927F6810014B007 /* Pitaza170UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F275F2927F6810014B007 /* Pitaza170UITestsLaunchTests.swift */; };
+		2C8F276D2927FAAA0014B007 /* AppGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F276C2927FAAA0014B007 /* AppGraph.swift */; };
+		2DF7061CC45C54A8D878C42A /* Pods_Pitaza170.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A56304943E601CB2C32C34 /* Pods_Pitaza170.framework */; };
+		944C72E1ECCA0B94D47035A2 /* Pods_Pitaza170Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F55553A29B707A4EE31E1F61 /* Pods_Pitaza170Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19E766F820096CED64B759B7 /* Pods_Pitaza170_Pitaza170UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pitaza170_Pitaza170UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C8F27392927F67F0014B007 /* Pitaza170.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pitaza170.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C8F273C2927F67F0014B007 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C8F273E2927F67F0014B007 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2C8F27402927F67F0014B007 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2C8F27432927F67F0014B007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C8F27452927F6810014B007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C8F27482927F6810014B007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C8F274A2927F6810014B007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +52,15 @@
 		2C8F27592927F6810014B007 /* Pitaza170UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pitaza170UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C8F275D2927F6810014B007 /* Pitaza170UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitaza170UITests.swift; sourceTree = "<group>"; };
 		2C8F275F2927F6810014B007 /* Pitaza170UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitaza170UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2C8F276C2927FAAA0014B007 /* AppGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGraph.swift; sourceTree = "<group>"; };
+		31E6FA5707C44548DDD31F8B /* Pods-Pitaza170.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170.release.xcconfig"; path = "Target Support Files/Pods-Pitaza170/Pods-Pitaza170.release.xcconfig"; sourceTree = "<group>"; };
+		61A56304943E601CB2C32C34 /* Pods_Pitaza170.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pitaza170.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FB667142094942B3054B3B7 /* Pods-Pitaza170.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170.debug.xcconfig"; path = "Target Support Files/Pods-Pitaza170/Pods-Pitaza170.debug.xcconfig"; sourceTree = "<group>"; };
+		D7B158A318DE6755767C381E /* Pods-Pitaza170-Pitaza170UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170-Pitaza170UITests.release.xcconfig"; path = "Target Support Files/Pods-Pitaza170-Pitaza170UITests/Pods-Pitaza170-Pitaza170UITests.release.xcconfig"; sourceTree = "<group>"; };
+		DBC457AB74D17D5C0E853538 /* Pods-Pitaza170Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170Tests.debug.xcconfig"; path = "Target Support Files/Pods-Pitaza170Tests/Pods-Pitaza170Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F0836D9C1D67527B8406E195 /* Pods-Pitaza170Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170Tests.release.xcconfig"; path = "Target Support Files/Pods-Pitaza170Tests/Pods-Pitaza170Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F55553A29B707A4EE31E1F61 /* Pods_Pitaza170Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pitaza170Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F85715DAC88F205310E4599D /* Pods-Pitaza170-Pitaza170UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170-Pitaza170UITests.debug.xcconfig"; path = "Target Support Files/Pods-Pitaza170-Pitaza170UITests/Pods-Pitaza170-Pitaza170UITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DF7061CC45C54A8D878C42A /* Pods_Pitaza170.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				944C72E1ECCA0B94D47035A2 /* Pods_Pitaza170Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02DA1C60F6409F8DA5500FE5 /* Pods_Pitaza170_Pitaza170UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				2C8F27522927F6810014B007 /* Pitaza170Tests */,
 				2C8F275C2927F6810014B007 /* Pitaza170UITests */,
 				2C8F273A2927F67F0014B007 /* Products */,
+				C988BB5D8CF93C0168DC1E54 /* Pods */,
+				BBB3197462214AAAE4C17476 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +116,10 @@
 		2C8F273B2927F67F0014B007 /* Pitaza170 */ = {
 			isa = PBXGroup;
 			children = (
-				2C8F273C2927F67F0014B007 /* AppDelegate.swift */,
-				2C8F273E2927F67F0014B007 /* SceneDelegate.swift */,
+				2C8F276C2927FAAA0014B007 /* AppGraph.swift */,
+				2C8F276F292802720014B007 /* Supporting files */,
 				2C8F27402927F67F0014B007 /* ViewController.swift */,
-				2C8F27422927F67F0014B007 /* Main.storyboard */,
 				2C8F27452927F6810014B007 /* Assets.xcassets */,
-				2C8F27472927F6810014B007 /* LaunchScreen.storyboard */,
 				2C8F274A2927F6810014B007 /* Info.plist */,
 			);
 			path = Pitaza170;
@@ -127,6 +142,39 @@
 			path = Pitaza170UITests;
 			sourceTree = "<group>";
 		};
+		2C8F276F292802720014B007 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				2C8F27472927F6810014B007 /* LaunchScreen.storyboard */,
+				2C8F273E2927F67F0014B007 /* SceneDelegate.swift */,
+				2C8F273C2927F67F0014B007 /* AppDelegate.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		BBB3197462214AAAE4C17476 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61A56304943E601CB2C32C34 /* Pods_Pitaza170.framework */,
+				19E766F820096CED64B759B7 /* Pods_Pitaza170_Pitaza170UITests.framework */,
+				F55553A29B707A4EE31E1F61 /* Pods_Pitaza170Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C988BB5D8CF93C0168DC1E54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FB667142094942B3054B3B7 /* Pods-Pitaza170.debug.xcconfig */,
+				31E6FA5707C44548DDD31F8B /* Pods-Pitaza170.release.xcconfig */,
+				F85715DAC88F205310E4599D /* Pods-Pitaza170-Pitaza170UITests.debug.xcconfig */,
+				D7B158A318DE6755767C381E /* Pods-Pitaza170-Pitaza170UITests.release.xcconfig */,
+				DBC457AB74D17D5C0E853538 /* Pods-Pitaza170Tests.debug.xcconfig */,
+				F0836D9C1D67527B8406E195 /* Pods-Pitaza170Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C8F27632927F6810014B007 /* Build configuration list for PBXNativeTarget "Pitaza170" */;
 			buildPhases = (
+				105FC8344383F12BE27CB2C2 /* [CP] Check Pods Manifest.lock */,
+				2C8F276E2927FE010014B007 /* SwiftLint */,
 				2C8F27352927F67F0014B007 /* Sources */,
 				2C8F27362927F67F0014B007 /* Frameworks */,
 				2C8F27372927F67F0014B007 /* Resources */,
+				AB36FE9E29EC81E67C2FF40E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C8F27662927F6810014B007 /* Build configuration list for PBXNativeTarget "Pitaza170Tests" */;
 			buildPhases = (
+				8EC89496178DD64FEACEBF48 /* [CP] Check Pods Manifest.lock */,
 				2C8F274B2927F6810014B007 /* Sources */,
 				2C8F274C2927F6810014B007 /* Frameworks */,
 				2C8F274D2927F6810014B007 /* Resources */,
@@ -169,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C8F27692927F6810014B007 /* Build configuration list for PBXNativeTarget "Pitaza170UITests" */;
 			buildPhases = (
+				69475A67640AD345CF75BDA4 /* [CP] Check Pods Manifest.lock */,
 				2C8F27552927F6810014B007 /* Sources */,
 				2C8F27562927F6810014B007 /* Frameworks */,
 				2C8F27572927F6810014B007 /* Resources */,
+				0A15056FAF3401995E2265C4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,7 +287,6 @@
 			files = (
 				2C8F27492927F6810014B007 /* LaunchScreen.storyboard in Resources */,
 				2C8F27462927F6810014B007 /* Assets.xcassets in Resources */,
-				2C8F27442927F67F0014B007 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,11 +306,133 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A15056FAF3401995E2265C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pitaza170-Pitaza170UITests/Pods-Pitaza170-Pitaza170UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pitaza170-Pitaza170UITests/Pods-Pitaza170-Pitaza170UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pitaza170-Pitaza170UITests/Pods-Pitaza170-Pitaza170UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		105FC8344383F12BE27CB2C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pitaza170-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C8F276E2927FE010014B007 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		69475A67640AD345CF75BDA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pitaza170-Pitaza170UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EC89496178DD64FEACEBF48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pitaza170Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB36FE9E29EC81E67C2FF40E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pitaza170/Pods-Pitaza170-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pitaza170/Pods-Pitaza170-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pitaza170/Pods-Pitaza170-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2C8F27352927F67F0014B007 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C8F276D2927FAAA0014B007 /* AppGraph.swift in Sources */,
 				2C8F27412927F67F0014B007 /* ViewController.swift in Sources */,
 				2C8F273D2927F67F0014B007 /* AppDelegate.swift in Sources */,
 				2C8F273F2927F67F0014B007 /* SceneDelegate.swift in Sources */,
@@ -297,14 +472,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2C8F27422927F67F0014B007 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2C8F27432927F67F0014B007 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2C8F27472927F6810014B007 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +533,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +587,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -432,6 +599,7 @@
 		};
 		2C8F27642927F6810014B007 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FB667142094942B3054B3B7 /* Pods-Pitaza170.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -441,9 +609,9 @@
 				INFOPLIST_FILE = Pitaza170/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,6 +619,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Pitaza170.Pitaza170;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -459,6 +630,7 @@
 		};
 		2C8F27652927F6810014B007 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31E6FA5707C44548DDD31F8B /* Pods-Pitaza170.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -468,9 +640,9 @@
 				INFOPLIST_FILE = Pitaza170/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,6 +650,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Pitaza170.Pitaza170;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -486,6 +661,7 @@
 		};
 		2C8F27672927F6810014B007 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBC457AB74D17D5C0E853538 /* Pods-Pitaza170Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -505,6 +681,7 @@
 		};
 		2C8F27682927F6810014B007 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0836D9C1D67527B8406E195 /* Pods-Pitaza170Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -524,6 +701,7 @@
 		};
 		2C8F276A2927F6810014B007 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F85715DAC88F205310E4599D /* Pods-Pitaza170-Pitaza170UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -541,6 +719,7 @@
 		};
 		2C8F276B2927F6810014B007 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7B158A318DE6755767C381E /* Pods-Pitaza170-Pitaza170UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
