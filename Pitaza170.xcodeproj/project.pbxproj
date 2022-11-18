@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C8F273D2927F67F0014B007 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F273C2927F67F0014B007 /* AppDelegate.swift */; };
+		2C8F273F2927F67F0014B007 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F273E2927F67F0014B007 /* SceneDelegate.swift */; };
+		2C8F27412927F67F0014B007 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F27402927F67F0014B007 /* ViewController.swift */; };
+		2C8F27442927F67F0014B007 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8F27422927F67F0014B007 /* Main.storyboard */; };
+		2C8F27462927F6810014B007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C8F27452927F6810014B007 /* Assets.xcassets */; };
+		2C8F27492927F6810014B007 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8F27472927F6810014B007 /* LaunchScreen.storyboard */; };
+		2C8F27542927F6810014B007 /* Pitaza170Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F27532927F6810014B007 /* Pitaza170Tests.swift */; };
+		2C8F275E2927F6810014B007 /* Pitaza170UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F275D2927F6810014B007 /* Pitaza170UITests.swift */; };
+		2C8F27602927F6810014B007 /* Pitaza170UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F275F2927F6810014B007 /* Pitaza170UITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C8F27502927F6810014B007 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C8F27312927F67F0014B007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C8F27382927F67F0014B007;
+			remoteInfo = Pitaza170;
+		};
+		2C8F275A2927F6810014B007 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C8F27312927F67F0014B007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C8F27382927F67F0014B007;
+			remoteInfo = Pitaza170;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C8F27392927F67F0014B007 /* Pitaza170.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pitaza170.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C8F273C2927F67F0014B007 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C8F273E2927F67F0014B007 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2C8F27402927F67F0014B007 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C8F27432927F67F0014B007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C8F27452927F6810014B007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C8F27482927F6810014B007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C8F274A2927F6810014B007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C8F274F2927F6810014B007 /* Pitaza170Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pitaza170Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C8F27532927F6810014B007 /* Pitaza170Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitaza170Tests.swift; sourceTree = "<group>"; };
+		2C8F27592927F6810014B007 /* Pitaza170UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pitaza170UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C8F275D2927F6810014B007 /* Pitaza170UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitaza170UITests.swift; sourceTree = "<group>"; };
+		2C8F275F2927F6810014B007 /* Pitaza170UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitaza170UITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C8F27362927F67F0014B007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C8F274C2927F6810014B007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C8F27562927F6810014B007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C8F27302927F67F0014B007 = {
+			isa = PBXGroup;
+			children = (
+				2C8F273B2927F67F0014B007 /* Pitaza170 */,
+				2C8F27522927F6810014B007 /* Pitaza170Tests */,
+				2C8F275C2927F6810014B007 /* Pitaza170UITests */,
+				2C8F273A2927F67F0014B007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C8F273A2927F67F0014B007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C8F27392927F67F0014B007 /* Pitaza170.app */,
+				2C8F274F2927F6810014B007 /* Pitaza170Tests.xctest */,
+				2C8F27592927F6810014B007 /* Pitaza170UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C8F273B2927F67F0014B007 /* Pitaza170 */ = {
+			isa = PBXGroup;
+			children = (
+				2C8F273C2927F67F0014B007 /* AppDelegate.swift */,
+				2C8F273E2927F67F0014B007 /* SceneDelegate.swift */,
+				2C8F27402927F67F0014B007 /* ViewController.swift */,
+				2C8F27422927F67F0014B007 /* Main.storyboard */,
+				2C8F27452927F6810014B007 /* Assets.xcassets */,
+				2C8F27472927F6810014B007 /* LaunchScreen.storyboard */,
+				2C8F274A2927F6810014B007 /* Info.plist */,
+			);
+			path = Pitaza170;
+			sourceTree = "<group>";
+		};
+		2C8F27522927F6810014B007 /* Pitaza170Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2C8F27532927F6810014B007 /* Pitaza170Tests.swift */,
+			);
+			path = Pitaza170Tests;
+			sourceTree = "<group>";
+		};
+		2C8F275C2927F6810014B007 /* Pitaza170UITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C8F275D2927F6810014B007 /* Pitaza170UITests.swift */,
+				2C8F275F2927F6810014B007 /* Pitaza170UITestsLaunchTests.swift */,
+			);
+			path = Pitaza170UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C8F27382927F67F0014B007 /* Pitaza170 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C8F27632927F6810014B007 /* Build configuration list for PBXNativeTarget "Pitaza170" */;
+			buildPhases = (
+				2C8F27352927F67F0014B007 /* Sources */,
+				2C8F27362927F67F0014B007 /* Frameworks */,
+				2C8F27372927F67F0014B007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pitaza170;
+			productName = Pitaza170;
+			productReference = 2C8F27392927F67F0014B007 /* Pitaza170.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C8F274E2927F6810014B007 /* Pitaza170Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C8F27662927F6810014B007 /* Build configuration list for PBXNativeTarget "Pitaza170Tests" */;
+			buildPhases = (
+				2C8F274B2927F6810014B007 /* Sources */,
+				2C8F274C2927F6810014B007 /* Frameworks */,
+				2C8F274D2927F6810014B007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C8F27512927F6810014B007 /* PBXTargetDependency */,
+			);
+			name = Pitaza170Tests;
+			productName = Pitaza170Tests;
+			productReference = 2C8F274F2927F6810014B007 /* Pitaza170Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C8F27582927F6810014B007 /* Pitaza170UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C8F27692927F6810014B007 /* Build configuration list for PBXNativeTarget "Pitaza170UITests" */;
+			buildPhases = (
+				2C8F27552927F6810014B007 /* Sources */,
+				2C8F27562927F6810014B007 /* Frameworks */,
+				2C8F27572927F6810014B007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C8F275B2927F6810014B007 /* PBXTargetDependency */,
+			);
+			name = Pitaza170UITests;
+			productName = Pitaza170UITests;
+			productReference = 2C8F27592927F6810014B007 /* Pitaza170UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C8F27312927F67F0014B007 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					2C8F27382927F67F0014B007 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					2C8F274E2927F6810014B007 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 2C8F27382927F67F0014B007;
+					};
+					2C8F27582927F6810014B007 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 2C8F27382927F67F0014B007;
+					};
+				};
+			};
+			buildConfigurationList = 2C8F27342927F67F0014B007 /* Build configuration list for PBXProject "Pitaza170" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C8F27302927F67F0014B007;
+			productRefGroup = 2C8F273A2927F67F0014B007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C8F27382927F67F0014B007 /* Pitaza170 */,
+				2C8F274E2927F6810014B007 /* Pitaza170Tests */,
+				2C8F27582927F6810014B007 /* Pitaza170UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C8F27372927F67F0014B007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C8F27492927F6810014B007 /* LaunchScreen.storyboard in Resources */,
+				2C8F27462927F6810014B007 /* Assets.xcassets in Resources */,
+				2C8F27442927F67F0014B007 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C8F274D2927F6810014B007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C8F27572927F6810014B007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C8F27352927F67F0014B007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C8F27412927F67F0014B007 /* ViewController.swift in Sources */,
+				2C8F273D2927F67F0014B007 /* AppDelegate.swift in Sources */,
+				2C8F273F2927F67F0014B007 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C8F274B2927F6810014B007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C8F27542927F6810014B007 /* Pitaza170Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C8F27552927F6810014B007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C8F27602927F6810014B007 /* Pitaza170UITestsLaunchTests.swift in Sources */,
+				2C8F275E2927F6810014B007 /* Pitaza170UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C8F27512927F6810014B007 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C8F27382927F67F0014B007 /* Pitaza170 */;
+			targetProxy = 2C8F27502927F6810014B007 /* PBXContainerItemProxy */;
+		};
+		2C8F275B2927F6810014B007 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C8F27382927F67F0014B007 /* Pitaza170 */;
+			targetProxy = 2C8F275A2927F6810014B007 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C8F27422927F67F0014B007 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C8F27432927F67F0014B007 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C8F27472927F6810014B007 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C8F27482927F6810014B007 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C8F27612927F6810014B007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C8F27622927F6810014B007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C8F27642927F6810014B007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pitaza170/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pitaza170.Pitaza170;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C8F27652927F6810014B007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pitaza170/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pitaza170.Pitaza170;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C8F27672927F6810014B007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pitaza170.Pitaza170Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pitaza170.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pitaza170";
+			};
+			name = Debug;
+		};
+		2C8F27682927F6810014B007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pitaza170.Pitaza170Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pitaza170.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pitaza170";
+			};
+			name = Release;
+		};
+		2C8F276A2927F6810014B007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pitaza170.Pitaza170UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pitaza170;
+			};
+			name = Debug;
+		};
+		2C8F276B2927F6810014B007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pitaza170.Pitaza170UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pitaza170;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C8F27342927F67F0014B007 /* Build configuration list for PBXProject "Pitaza170" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C8F27612927F6810014B007 /* Debug */,
+				2C8F27622927F6810014B007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C8F27632927F6810014B007 /* Build configuration list for PBXNativeTarget "Pitaza170" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C8F27642927F6810014B007 /* Debug */,
+				2C8F27652927F6810014B007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C8F27662927F6810014B007 /* Build configuration list for PBXNativeTarget "Pitaza170Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C8F27672927F6810014B007 /* Debug */,
+				2C8F27682927F6810014B007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C8F27692927F6810014B007 /* Build configuration list for PBXNativeTarget "Pitaza170UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C8F276A2927F6810014B007 /* Debug */,
+				2C8F276B2927F6810014B007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C8F27312927F67F0014B007 /* Project object */;
+}
