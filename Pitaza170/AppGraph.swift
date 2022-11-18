@@ -19,7 +19,24 @@ final class AppGraph: AppInerface {
     }
     
     convenience init() {
-        let vc = ViewController()
+        // TODO: Make Fabric
+        let welcomeLabel: UILabel = {
+            let label = UILabel()
+            label.text = "Добро пожаловать!"
+            label.font = .systemFont(ofSize: 25)
+            label.numberOfLines = 1
+            label.textColor = .white
+            label.textAlignment = .center
+            return label
+        }()
+        // TODO: add logo
+        let logoImage = UIImageView(image: UIImage(named: "logo"))
+        let vc = LoginViewController(
+            loginButton: AuthenticationButton(title: "Вход"),
+            registrationButton: AuthenticationButton(title: "Регистрация"),
+            welcomeLabel: welcomeLabel,
+            logoImage: logoImage
+        )
         self.init(rootViewController: vc)
     }
 }

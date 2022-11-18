@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		02DA1C60F6409F8DA5500FE5 /* Pods_Pitaza170_Pitaza170UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E766F820096CED64B759B7 /* Pods_Pitaza170_Pitaza170UITests.framework */; };
+		2C0655DB292820E1006F79DA /* InsetsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0655DA292820E1006F79DA /* InsetsProvider.swift */; };
+		2C0655DD29282CA3006F79DA /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0655DC29282CA3006F79DA /* AuthenticationViewController.swift */; };
+		2C0655DF292835B1006F79DA /* AuthenticationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0655DE292835B1006F79DA /* AuthenticationTextField.swift */; };
 		2C8F273D2927F67F0014B007 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F273C2927F67F0014B007 /* AppDelegate.swift */; };
 		2C8F273F2927F67F0014B007 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F273E2927F67F0014B007 /* SceneDelegate.swift */; };
 		2C8F27412927F67F0014B007 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F27402927F67F0014B007 /* ViewController.swift */; };
@@ -17,6 +20,8 @@
 		2C8F275E2927F6810014B007 /* Pitaza170UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F275D2927F6810014B007 /* Pitaza170UITests.swift */; };
 		2C8F27602927F6810014B007 /* Pitaza170UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F275F2927F6810014B007 /* Pitaza170UITestsLaunchTests.swift */; };
 		2C8F276D2927FAAA0014B007 /* AppGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F276C2927FAAA0014B007 /* AppGraph.swift */; };
+		2C8F2779292813BB0014B007 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F2778292813BB0014B007 /* LoginViewController.swift */; };
+		2C8F277E292816BF0014B007 /* AuthenticationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F277D292816BF0014B007 /* AuthenticationButton.swift */; };
 		2DF7061CC45C54A8D878C42A /* Pods_Pitaza170.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A56304943E601CB2C32C34 /* Pods_Pitaza170.framework */; };
 		944C72E1ECCA0B94D47035A2 /* Pods_Pitaza170Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F55553A29B707A4EE31E1F61 /* Pods_Pitaza170Tests.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +45,9 @@
 
 /* Begin PBXFileReference section */
 		19E766F820096CED64B759B7 /* Pods_Pitaza170_Pitaza170UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pitaza170_Pitaza170UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C0655DA292820E1006F79DA /* InsetsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetsProvider.swift; sourceTree = "<group>"; };
+		2C0655DC29282CA3006F79DA /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		2C0655DE292835B1006F79DA /* AuthenticationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTextField.swift; sourceTree = "<group>"; };
 		2C8F27392927F67F0014B007 /* Pitaza170.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pitaza170.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C8F273C2927F67F0014B007 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C8F273E2927F67F0014B007 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +61,8 @@
 		2C8F275D2927F6810014B007 /* Pitaza170UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitaza170UITests.swift; sourceTree = "<group>"; };
 		2C8F275F2927F6810014B007 /* Pitaza170UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitaza170UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2C8F276C2927FAAA0014B007 /* AppGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGraph.swift; sourceTree = "<group>"; };
+		2C8F2778292813BB0014B007 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2C8F277D292816BF0014B007 /* AuthenticationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationButton.swift; sourceTree = "<group>"; };
 		31E6FA5707C44548DDD31F8B /* Pods-Pitaza170.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170.release.xcconfig"; path = "Target Support Files/Pods-Pitaza170/Pods-Pitaza170.release.xcconfig"; sourceTree = "<group>"; };
 		61A56304943E601CB2C32C34 /* Pods_Pitaza170.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pitaza170.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB667142094942B3054B3B7 /* Pods-Pitaza170.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170.debug.xcconfig"; path = "Target Support Files/Pods-Pitaza170/Pods-Pitaza170.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C0655D929282086006F79DA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2C0655DA292820E1006F79DA /* InsetsProvider.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		2C8F27302927F67F0014B007 = {
 			isa = PBXGroup;
 			children = (
@@ -117,9 +135,11 @@
 			isa = PBXGroup;
 			children = (
 				2C8F276C2927FAAA0014B007 /* AppGraph.swift */,
+				2C8F27772928137F0014B007 /* Authentication */,
+				2C0655D929282086006F79DA /* Services */,
 				2C8F276F292802720014B007 /* Supporting files */,
+				2C8F2776292812FA0014B007 /* Resources */,
 				2C8F27402927F67F0014B007 /* ViewController.swift */,
-				2C8F27452927F6810014B007 /* Assets.xcassets */,
 				2C8F274A2927F6810014B007 /* Info.plist */,
 			);
 			path = Pitaza170;
@@ -150,6 +170,41 @@
 				2C8F273C2927F67F0014B007 /* AppDelegate.swift */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		2C8F2776292812FA0014B007 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2C8F27452927F6810014B007 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2C8F27772928137F0014B007 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				2C8F277A292814A00014B007 /* Views */,
+				2C8F277B292816220014B007 /* Controllers */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		2C8F277A292814A00014B007 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C8F277D292816BF0014B007 /* AuthenticationButton.swift */,
+				2C0655DE292835B1006F79DA /* AuthenticationTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2C8F277B292816220014B007 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2C8F2778292813BB0014B007 /* LoginViewController.swift */,
+				2C0655DC29282CA3006F79DA /* AuthenticationViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		BBB3197462214AAAE4C17476 /* Frameworks */ = {
@@ -432,10 +487,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C0655DB292820E1006F79DA /* InsetsProvider.swift in Sources */,
+				2C8F2779292813BB0014B007 /* LoginViewController.swift in Sources */,
 				2C8F276D2927FAAA0014B007 /* AppGraph.swift in Sources */,
 				2C8F27412927F67F0014B007 /* ViewController.swift in Sources */,
+				2C0655DD29282CA3006F79DA /* AuthenticationViewController.swift in Sources */,
+				2C0655DF292835B1006F79DA /* AuthenticationTextField.swift in Sources */,
 				2C8F273D2927F67F0014B007 /* AppDelegate.swift in Sources */,
 				2C8F273F2927F67F0014B007 /* SceneDelegate.swift in Sources */,
+				2C8F277E292816BF0014B007 /* AuthenticationButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
