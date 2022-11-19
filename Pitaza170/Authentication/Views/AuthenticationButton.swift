@@ -13,7 +13,6 @@ class AuthenticationButton: UIButton {
     init(title: String) {
         self.title = title
         super.init(frame: .zero)
-        backgroundColor = .purple
         titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         setTitle(title, for: .normal)
         setTitleColor(.white, for: .normal)

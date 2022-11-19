@@ -19,17 +19,11 @@ final class AppGraph: AppInerface {
     }
     
     convenience init() {
-        // TODO: Make Fabric
-        let welcomeLabel: UILabel = {
-            let label = UILabel()
-            label.text = "Добро пожаловать!"
-            label.font = .systemFont(ofSize: 25)
-            label.numberOfLines = 1
-            label.textColor = .white
-            label.textAlignment = .center
-            return label
-        }()
-        // TODO: add logo
+        let welcomeLabel = LabelFactory.makeLabel(
+            text: "Добро пожаловать",
+            font: .boldSystemFont(ofSize: 35)
+        )
+        welcomeLabel.textAlignment = .center
         let logoImage = UIImageView(image: UIImage(named: "logo"))
         let loginVC = LoginViewController(
             loginButton: AuthenticationButton(title: "Вход"),
@@ -40,7 +34,7 @@ final class AppGraph: AppInerface {
         let bagVC = BagViewController(presenter: BagViewPresenter())
         
         // TODO: добавить проверку: авторизован пользователь или нет
-        let rootVC = true ? bagVC : loginVC
+        let rootVC = ProfileViewController() //false ? bagVC : loginVC
         self.init(rootViewController: rootVC)
     }
 }

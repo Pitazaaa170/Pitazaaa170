@@ -32,13 +32,12 @@ final class GlobalCurrenciesTableView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.layer.addSublayer(gradient)
         self.setupSubViews()
         self.setupConstraints()
     }
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.layer.addSublayer(gradient)
         self.setupSubViews()
         self.setupConstraints()
     }
@@ -65,8 +64,5 @@ final class GlobalCurrenciesTableView: UIView {
         self.clipsToBounds = true
         self.layer.cornerRadius = self.frame.width / 10
         self.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
-        
-        gradient.frame = self.bounds
-        
     }
 }

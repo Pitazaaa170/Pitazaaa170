@@ -23,9 +23,9 @@ final class ProfileViewController: UIViewController {
 
     override func viewDidLayoutSubviews() {
         profileBoard.applyGradient(
-            colors: [.purple, .green],
-            startPoint: CGPoint(x: 0.7, y: 0.8),
-            endPoint: CGPoint(x: 1, y: 0)
+            colors: [.myPurple, .myGreen],
+            startPoint: CGPoint(x: 0.5, y: 0),
+            endPoint: CGPoint(x: 0.5, y: 1)
         )
         let radius: CGFloat = 15
         profileBoard.layer.cornerRadius = radius

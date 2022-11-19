@@ -48,7 +48,7 @@ class GlobalCurrenciesTableViewController: UIViewController {
         view.addGestureRecognizer(tapGesture)
     }
     
-    override func viewWillLayoutSubviews() {
+    override func viewDidLayoutSubviews() {
         view.applyGradient(
             colors: [.myGreen, .myPurple],
             startPoint: .zero,
@@ -65,10 +65,7 @@ class GlobalCurrenciesTableViewController: UIViewController {
         currenciesTableView.tableView.delegate = self
         currenciesTableView.tableView.dataSource = self
         currenciesTableView.searchBar.delegate = self
-    }
-    
-    
-    
+    }   
 }
 
 extension GlobalCurrenciesTableViewController: UITableViewDelegate, UITableViewDataSource {

@@ -28,9 +28,9 @@ class HistorySheetVC: UIViewController, UISheetPresentationControllerDelegate {
 
     override func viewDidLayoutSubviews() {
         view.applyGradient(
-            colors: [.green, .purple],
-            startPoint: CGPoint(x: 0.5, y: 1),
-            endPoint: CGPoint(x: 0.5, y: 0.4)
+            colors: [.myPurple, .myGreen],
+            startPoint: CGPoint(x: 0.5, y: 0),
+            endPoint: CGPoint(x: 0.5, y: 1)
         )
     }
 

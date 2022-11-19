@@ -28,9 +28,9 @@ class AuthenticationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.applyGradient(
-            colors: [.black, .purple],
-            startPoint: CGPoint(x: 0, y: 1),
-            endPoint: .zero
+            colors: [.myGreen, .myPurple],
+            startPoint: CGPoint(x: 0.5, y: 0),
+            endPoint: CGPoint(x: 0.5, y: 1)
         )
         setUpLayout()
     }
@@ -40,9 +40,9 @@ class AuthenticationViewController: UIViewController {
             element.layer.cornerRadius = element.frame.height / 2
         }
         button.applyGradient(
-            colors: [.purple, .black],
-            startPoint: CGPoint(x: Double.randCord(), y: Double.randCord()),
-            endPoint: CGPoint(x: Double.randCord(), y: Double.randCord())
+            colors: [.myPurple, .myGreen],
+            startPoint: CGPoint(x: 0.5, y: 0),
+            endPoint: CGPoint(x: 0.5, y: 1)
         )
         button.layer.sublayers?.forEach {
             $0.cornerRadius = button.frame.height / 2
