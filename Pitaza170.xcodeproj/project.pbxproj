@@ -19,6 +19,18 @@
 		2C8F276D2927FAAA0014B007 /* AppGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F276C2927FAAA0014B007 /* AppGraph.swift */; };
 		2DF7061CC45C54A8D878C42A /* Pods_Pitaza170.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A56304943E601CB2C32C34 /* Pods_Pitaza170.framework */; };
 		944C72E1ECCA0B94D47035A2 /* Pods_Pitaza170Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F55553A29B707A4EE31E1F61 /* Pods_Pitaza170Tests.framework */; };
+		ADE333D0292810B500DDB303 /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE333CF292810B500DDB303 /* BalanceView.swift */; };
+		ADE333D2292810F900DDB303 /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE333D1292810F900DDB303 /* BalanceViewController.swift */; };
+		ADE333D52928284600DDB303 /* CAGradientLayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE333D42928284600DDB303 /* CAGradientLayerExtension.swift */; };
+		ADE333DC29284B7000DDB303 /* BagViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE333DB29284B7000DDB303 /* BagViewPresenter.swift */; };
+		ADE333E029284BB300DDB303 /* BagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE333DF29284BB300DDB303 /* BagView.swift */; };
+		ADE333E229284BE600DDB303 /* BagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE333E129284BE600DDB303 /* BagViewController.swift */; };
+		ADE333E429284CD100DDB303 /* InputOutputBagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE333E329284CD100DDB303 /* InputOutputBagView.swift */; };
+		ADE333E729284F4200DDB303 /* CurrenciesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE333E629284F4200DDB303 /* CurrenciesTableView.swift */; };
+		ADE333E929284F5100DDB303 /* CurrenciesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE333E829284F5100DDB303 /* CurrenciesTableViewController.swift */; };
+		ADE333EB292855FA00DDB303 /* CurrenciesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE333EA292855FA00DDB303 /* CurrenciesTableViewCell.swift */; };
+		ADE333F229285D2F00DDB303 /* UserCurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE333F129285D2F00DDB303 /* UserCurrencyModel.swift */; };
+		ADE333F52928628F00DDB303 /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE333F42928628F00DDB303 /* PhotoService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +68,18 @@
 		31E6FA5707C44548DDD31F8B /* Pods-Pitaza170.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170.release.xcconfig"; path = "Target Support Files/Pods-Pitaza170/Pods-Pitaza170.release.xcconfig"; sourceTree = "<group>"; };
 		61A56304943E601CB2C32C34 /* Pods_Pitaza170.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pitaza170.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB667142094942B3054B3B7 /* Pods-Pitaza170.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170.debug.xcconfig"; path = "Target Support Files/Pods-Pitaza170/Pods-Pitaza170.debug.xcconfig"; sourceTree = "<group>"; };
+		ADE333CF292810B500DDB303 /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
+		ADE333D1292810F900DDB303 /* BalanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
+		ADE333D42928284600DDB303 /* CAGradientLayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAGradientLayerExtension.swift; sourceTree = "<group>"; };
+		ADE333DB29284B7000DDB303 /* BagViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagViewPresenter.swift; sourceTree = "<group>"; };
+		ADE333DF29284BB300DDB303 /* BagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagView.swift; sourceTree = "<group>"; };
+		ADE333E129284BE600DDB303 /* BagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagViewController.swift; sourceTree = "<group>"; };
+		ADE333E329284CD100DDB303 /* InputOutputBagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputOutputBagView.swift; sourceTree = "<group>"; };
+		ADE333E629284F4200DDB303 /* CurrenciesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesTableView.swift; sourceTree = "<group>"; };
+		ADE333E829284F5100DDB303 /* CurrenciesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesTableViewController.swift; sourceTree = "<group>"; };
+		ADE333EA292855FA00DDB303 /* CurrenciesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesTableViewCell.swift; sourceTree = "<group>"; };
+		ADE333F129285D2F00DDB303 /* UserCurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCurrencyModel.swift; sourceTree = "<group>"; };
+		ADE333F42928628F00DDB303 /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
 		D7B158A318DE6755767C381E /* Pods-Pitaza170-Pitaza170UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170-Pitaza170UITests.release.xcconfig"; path = "Target Support Files/Pods-Pitaza170-Pitaza170UITests/Pods-Pitaza170-Pitaza170UITests.release.xcconfig"; sourceTree = "<group>"; };
 		DBC457AB74D17D5C0E853538 /* Pods-Pitaza170Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170Tests.debug.xcconfig"; path = "Target Support Files/Pods-Pitaza170Tests/Pods-Pitaza170Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F0836D9C1D67527B8406E195 /* Pods-Pitaza170Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170Tests.release.xcconfig"; path = "Target Support Files/Pods-Pitaza170Tests/Pods-Pitaza170Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +140,9 @@
 		2C8F273B2927F67F0014B007 /* Pitaza170 */ = {
 			isa = PBXGroup;
 			children = (
+				ADE333F3292861DE00DDB303 /* Services */,
+				ADE333D62928291D00DDB303 /* BagView */,
+				ADE333D32928281800DDB303 /* Extension */,
 				2C8F276C2927FAAA0014B007 /* AppGraph.swift */,
 				2C8F276F292802720014B007 /* Supporting files */,
 				2C8F27402927F67F0014B007 /* ViewController.swift */,
@@ -150,6 +177,103 @@
 				2C8F273C2927F67F0014B007 /* AppDelegate.swift */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		ADE333CE29280E0E00DDB303 /* BalanceSubModule */ = {
+			isa = PBXGroup;
+			children = (
+				ADE333CF292810B500DDB303 /* BalanceView.swift */,
+				ADE333D1292810F900DDB303 /* BalanceViewController.swift */,
+			);
+			path = BalanceSubModule;
+			sourceTree = "<group>";
+		};
+		ADE333D32928281800DDB303 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ADE333D42928284600DDB303 /* CAGradientLayerExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		ADE333D62928291D00DDB303 /* BagView */ = {
+			isa = PBXGroup;
+			children = (
+				ADE333DA29284AF500DDB303 /* Model */,
+				ADE333D929284AD700DDB303 /* View */,
+				ADE333D8292847E900DDB303 /* Presenter */,
+			);
+			path = BagView;
+			sourceTree = "<group>";
+		};
+		ADE333D8292847E900DDB303 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				ADE333DB29284B7000DDB303 /* BagViewPresenter.swift */,
+				ADE333E329284CD100DDB303 /* InputOutputBagView.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		ADE333D929284AD700DDB303 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADE333E529284E6700DDB303 /* CurrenciesTableViewSubModule */,
+				ADE333CE29280E0E00DDB303 /* BalanceSubModule */,
+				ADE333DF29284BB300DDB303 /* BagView.swift */,
+				ADE333E129284BE600DDB303 /* BagViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ADE333DA29284AF500DDB303 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ADE333E529284E6700DDB303 /* CurrenciesTableViewSubModule */ = {
+			isa = PBXGroup;
+			children = (
+				ADE333EE29285CD300DDB303 /* Model */,
+				ADE333ED2928560F00DDB303 /* Views */,
+				ADE333EC2928560700DDB303 /* Controllers */,
+			);
+			path = CurrenciesTableViewSubModule;
+			sourceTree = "<group>";
+		};
+		ADE333EC2928560700DDB303 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ADE333E829284F5100DDB303 /* CurrenciesTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ADE333ED2928560F00DDB303 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADE333EA292855FA00DDB303 /* CurrenciesTableViewCell.swift */,
+				ADE333E629284F4200DDB303 /* CurrenciesTableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ADE333EE29285CD300DDB303 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ADE333F129285D2F00DDB303 /* UserCurrencyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ADE333F3292861DE00DDB303 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ADE333F42928628F00DDB303 /* PhotoService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		BBB3197462214AAAE4C17476 /* Frameworks */ = {
@@ -433,9 +557,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C8F276D2927FAAA0014B007 /* AppGraph.swift in Sources */,
+				ADE333D0292810B500DDB303 /* BalanceView.swift in Sources */,
+				ADE333D52928284600DDB303 /* CAGradientLayerExtension.swift in Sources */,
+				ADE333E229284BE600DDB303 /* BagViewController.swift in Sources */,
 				2C8F27412927F67F0014B007 /* ViewController.swift in Sources */,
+				ADE333D2292810F900DDB303 /* BalanceViewController.swift in Sources */,
 				2C8F273D2927F67F0014B007 /* AppDelegate.swift in Sources */,
+				ADE333DC29284B7000DDB303 /* BagViewPresenter.swift in Sources */,
+				ADE333F52928628F00DDB303 /* PhotoService.swift in Sources */,
+				ADE333EB292855FA00DDB303 /* CurrenciesTableViewCell.swift in Sources */,
 				2C8F273F2927F67F0014B007 /* SceneDelegate.swift in Sources */,
+				ADE333F229285D2F00DDB303 /* UserCurrencyModel.swift in Sources */,
+				ADE333E429284CD100DDB303 /* InputOutputBagView.swift in Sources */,
+				ADE333E929284F5100DDB303 /* CurrenciesTableViewController.swift in Sources */,
+				ADE333E729284F4200DDB303 /* CurrenciesTableView.swift in Sources */,
+				ADE333E029284BB300DDB303 /* BagView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
