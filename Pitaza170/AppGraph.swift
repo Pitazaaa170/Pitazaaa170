@@ -31,12 +31,16 @@ final class AppGraph: AppInerface {
         }()
         // TODO: add logo
         let logoImage = UIImageView(image: UIImage(named: "logo"))
-        let vc = LoginViewController(
+        let loginVC = LoginViewController(
             loginButton: AuthenticationButton(title: "Вход"),
             registrationButton: AuthenticationButton(title: "Регистрация"),
             welcomeLabel: welcomeLabel,
             logoImage: logoImage
         )
-        self.init(rootViewController: vc)
+        let bagVC = BagViewController(presenter: BagViewPresenter())
+        
+        // TODO: добавить проверку: авторизован пользователь или нет
+        let rootVC = true ? bagVC : loginVC
+        self.init(rootViewController: rootVC)
     }
 }

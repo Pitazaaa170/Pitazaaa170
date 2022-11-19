@@ -1,14 +1,8 @@
-
-
 import UIKit
 
 final class BagViewController: UIViewController {
     
     private let presenter: BagViewOutput
-    
-    private var bagView: BagView {
-        return self.view as? BagView ?? BagView()
-    }
     
     var userCurrency: UserCurrencies? {
         didSet {
@@ -46,17 +40,17 @@ final class BagViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    override func loadView() {
-        super.loadView()
-        self.view = BagView()
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configureUI()
         self.presenter.viewDidLoadCurrencies()
         self.presenter.viewDidLoadRubles()
+        view.applyGradient(
+            colors: [.black, .purple],
+            startPoint: .zero,
+            endPoint: CGPoint(x: 1, y: 1)
+        )
     }
     
     // MARK: - Private
@@ -71,7 +65,6 @@ final class BagViewController: UIViewController {
         self.addChild(self.balanceViewController)
         self.view.addSubview(self.balanceViewController.view)
         self.balanceViewController.didMove(toParent: self)
-        self.balanceViewController.view.translatesAutoresizingMaskIntoConstraints = false
         self.balanceViewController.view.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(55)
             make.left.right.equalToSuperview().inset(30)
@@ -85,13 +78,13 @@ final class BagViewController: UIViewController {
         self.inputRublesButton.snp.makeConstraints { make in
             make.top.equalTo(self.balanceViewController.view.snp.bottom).inset(-20)
             make.left.equalToSuperview().inset(30)
-            make.right.equalTo(self.bagView.snp.centerX).inset(15)
+            make.right.equalTo(self.view.snp.centerX).inset(15)
             make.height.equalTo(50)
         }
         self.outputRublesButton.snp.makeConstraints { make in
             make.top.equalTo(self.inputRublesButton.snp.bottom).inset(-20)
             make.left.equalToSuperview().inset(30)
-            make.right.equalTo(self.bagView.snp.centerX).inset(15)
+            make.right.equalTo(self.view.snp.centerX).inset(15)
             make.height.equalTo(50)
         }
     }
@@ -100,7 +93,6 @@ final class BagViewController: UIViewController {
         self.addChild(currencuesTableViewController)
         self.view.addSubview(currencuesTableViewController.view)
         currencuesTableViewController.didMove(toParent: self)
-        currencuesTableViewController.view.translatesAutoresizingMaskIntoConstraints = false
         self.currencuesTableViewController.view.snp.makeConstraints { make in
             make.top.equalTo(self.outputRublesButton.snp.bottom).inset(-20)
             make.left.right.equalToSuperview().inset(30)
