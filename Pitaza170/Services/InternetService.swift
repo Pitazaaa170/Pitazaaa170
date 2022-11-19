@@ -57,4 +57,28 @@ class InternetService {
         
     }
     
+    func loadGlobalCurrencies(completion: @escaping (Swift.Result<GlobalCurrencies,Error>)->Void){
+        
+        let urlString = "https://run.mocky.io/v3/1d1cb4ec-73db-4762-8c4b-0b8aa3cecd4c"
+        
+        let url = URL(string: urlString)!
+        URLSession.shared.dataTask(with: URLRequest(url: url)) { data, _, error in
+            if let error = error {
+                print(error)
+                return
+            }
+            
+            if let data = data {
+                do {
+                    let decoder = JSONDecoder()
+                    let globalCurrencies = try decoder.decode(GlobalCurrencies.self, from: data)
+                    completion(.success(globalCurrencies))
+                } catch {
+                    return
+                }
+            }
+        }.resume()
+        
+    }
+    
 }
