@@ -171,6 +171,4 @@ extension BagViewController: BagViewInput {
             self.userCurrency = currency
         }
     }
-    
-    
 }

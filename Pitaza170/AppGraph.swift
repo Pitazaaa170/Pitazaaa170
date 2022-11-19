@@ -40,7 +40,7 @@ final class AppGraph: AppInerface {
         let bagVC = BagViewController(presenter: BagViewPresenter())
         
         // TODO: добавить проверку: авторизован пользователь или нет
-        let rootVC = true ? bagVC : loginVC
+        let rootVC = ProfileViewController() //true ? bagVC : loginVC
         self.init(rootViewController: rootVC)
     }
 }

@@ -23,6 +23,11 @@
 		2C8F277E292816BF0014B007 /* AuthenticationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F277D292816BF0014B007 /* AuthenticationButton.swift */; };
 		2CEEC3AF29291E1900652C35 /* CAGradientLayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEEC3AE29291E1900652C35 /* CAGradientLayer+Extension.swift */; };
 		2CEEC3B129291E4000652C35 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEEC3B029291E4000652C35 /* UIView+Extension.swift */; };
+		2CEEC3C72929643B00652C35 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEEC3C62929643B00652C35 /* UserModel.swift */; };
+		2CEEC3C92929657900652C35 /* ProfileBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEEC3C82929657900652C35 /* ProfileBoard.swift */; };
+		2CEEC3CB2929668200652C35 /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEEC3CA2929668200652C35 /* LabelFactory.swift */; };
+		2CEEC3CD2929673C00652C35 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEEC3CC2929673C00652C35 /* ProfileViewController.swift */; };
+		2CEEC3CF29297D0800652C35 /* HistorySheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEEC3CE29297D0800652C35 /* HistorySheetVC.swift */; };
 		2DF7061CC45C54A8D878C42A /* Pods_Pitaza170.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A56304943E601CB2C32C34 /* Pods_Pitaza170.framework */; };
 		944C72E1ECCA0B94D47035A2 /* Pods_Pitaza170Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F55553A29B707A4EE31E1F61 /* Pods_Pitaza170Tests.framework */; };
 		ADE3341F292910B100DDB303 /* InternetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3341E292910B100DDB303 /* InternetService.swift */; };
@@ -78,6 +83,11 @@
 		2C8F277D292816BF0014B007 /* AuthenticationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationButton.swift; sourceTree = "<group>"; };
 		2CEEC3AE29291E1900652C35 /* CAGradientLayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+Extension.swift"; sourceTree = "<group>"; };
 		2CEEC3B029291E4000652C35 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		2CEEC3C62929643B00652C35 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		2CEEC3C82929657900652C35 /* ProfileBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBoard.swift; sourceTree = "<group>"; };
+		2CEEC3CA2929668200652C35 /* LabelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
+		2CEEC3CC2929673C00652C35 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2CEEC3CE29297D0800652C35 /* HistorySheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorySheetVC.swift; sourceTree = "<group>"; };
 		31E6FA5707C44548DDD31F8B /* Pods-Pitaza170.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170.release.xcconfig"; path = "Target Support Files/Pods-Pitaza170/Pods-Pitaza170.release.xcconfig"; sourceTree = "<group>"; };
 		61A56304943E601CB2C32C34 /* Pods_Pitaza170.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pitaza170.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB667142094942B3054B3B7 /* Pods-Pitaza170.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170.debug.xcconfig"; path = "Target Support Files/Pods-Pitaza170/Pods-Pitaza170.debug.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +178,7 @@
 				2CEEC3AC29291DE500652C35 /* CommonUI */,
 				ADE33429292911E500DDB303 /* BagView */,
 				2C8F27772928137F0014B007 /* Authentication */,
+				2CEEC3C2292963E300652C35 /* Profile */,
 				2C0655D929282086006F79DA /* Services */,
 				2C8F276F292802720014B007 /* Supporting files */,
 				2C8F2776292812FA0014B007 /* Resources */,
@@ -242,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				2CEEC3AD29291DF400652C35 /* Extensions */,
+				2CEEC3CA2929668200652C35 /* LabelFactory.swift */,
 			);
 			path = CommonUI;
 			sourceTree = "<group>";
@@ -253,6 +265,41 @@
 				2CEEC3B029291E4000652C35 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2CEEC3C2292963E300652C35 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2CEEC3C52929642A00652C35 /* Model */,
+				2CEEC3C42929642300652C35 /* View */,
+				2CEEC3C32929641500652C35 /* ViewModel */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		2CEEC3C32929641500652C35 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2CEEC3C42929642300652C35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CEEC3C82929657900652C35 /* ProfileBoard.swift */,
+				2CEEC3CC2929673C00652C35 /* ProfileViewController.swift */,
+				2CEEC3CE29297D0800652C35 /* HistorySheetVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2CEEC3C52929642A00652C35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2CEEC3C62929643B00652C35 /* UserModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		ADE33429292911E500DDB303 /* BagView */ = {
@@ -615,22 +662,27 @@
 				2C8F276D2927FAAA0014B007 /* AppGraph.swift in Sources */,
 				ADE3341F292910B100DDB303 /* InternetService.swift in Sources */,
 				2C0655DD29282CA3006F79DA /* AuthenticationViewController.swift in Sources */,
+				2CEEC3CD2929673C00652C35 /* ProfileViewController.swift in Sources */,
 				ADE33445292911E500DDB303 /* CurrenciesTableViewCell.swift in Sources */,
 				2C0655DF292835B1006F79DA /* AuthenticationTextField.swift in Sources */,
 				ADE33442292911E500DDB303 /* BalanceView.swift in Sources */,
 				ADE3343D292911E500DDB303 /* BagViewPresenter.swift in Sources */,
+				2CEEC3C72929643B00652C35 /* UserModel.swift in Sources */,
+				2CEEC3CB2929668200652C35 /* LabelFactory.swift in Sources */,
 				2CEEC3AF29291E1900652C35 /* CAGradientLayer+Extension.swift in Sources */,
 				2C8F273D2927F67F0014B007 /* AppDelegate.swift in Sources */,
 				ADE33444292911E500DDB303 /* CurrenciesTableViewController.swift in Sources */,
 				2C8F273F2927F67F0014B007 /* SceneDelegate.swift in Sources */,
 				ADE33421292910B200DDB303 /* PhotoService.swift in Sources */,
 				ADE33441292911E500DDB303 /* BalanceViewController.swift in Sources */,
+				2CEEC3CF29297D0800652C35 /* HistorySheetVC.swift in Sources */,
 				ADE3343C292911E500DDB303 /* InputOutputBagView.swift in Sources */,
 				ADE33446292911E500DDB303 /* CurrenciesTableView.swift in Sources */,
 				2CEEC3B129291E4000652C35 /* UIView+Extension.swift in Sources */,
 				2C8F277E292816BF0014B007 /* AuthenticationButton.swift in Sources */,
 				ADE33440292911E500DDB303 /* BagViewController.swift in Sources */,
 				ADE3343F292911E500DDB303 /* UserRubles.swift in Sources */,
+				2CEEC3C92929657900652C35 /* ProfileBoard.swift in Sources */,
 				ADE33443292911E500DDB303 /* BagView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -729,7 +781,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -783,7 +835,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -807,7 +859,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -838,7 +890,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

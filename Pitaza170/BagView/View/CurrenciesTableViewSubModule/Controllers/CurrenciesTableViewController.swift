@@ -26,6 +26,13 @@ class CurrenciesTableViewController: UIViewController {
     override func loadView() {
         super.loadView()
         self.view = CurrenciesTableView()
+        // temporary for testing
+        userCurrencies = [
+            UserCurrency(
+                image: "", name: "USD", description: "1 доллар США",
+                balance: "10", grow: "", positive: true
+            )
+        ]
     }
     
     init() {
