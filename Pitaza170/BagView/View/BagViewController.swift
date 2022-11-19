@@ -10,9 +10,9 @@ final class BagViewController: UIViewController {
         return self.view as? BagView ?? BagView()
     }
     
-    var userCurrency: UserCurrencies {
+    var userCurrency: UserCurrencies? {
         didSet {
-            currencuesTableViewController.userCurrencies = userCurrency.currencies
+            currencuesTableViewController.userCurrencies = userCurrency?.currencies
         }
     }
     

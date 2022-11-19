@@ -32,6 +32,14 @@ class BalanceViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
+    override func viewDidLoad() {
+        view.applyGradient(
+            colors: [.black, .purple],
+            startPoint: .zero,
+            endPoint: CGPoint(x: 1, y: 1)
+        )
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

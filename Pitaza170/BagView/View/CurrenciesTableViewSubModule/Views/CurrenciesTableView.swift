@@ -9,9 +9,6 @@ import UIKit
 import SnapKit
 
 final class CurrenciesTableView: UIView {
-    
-    private let  gradient = CAGradientLayer.getSecondCustomGradient()
-    
     var titleLabel: UILabel = {
         let label = UILabel()
         label.text = "Мои валюты"
@@ -33,18 +30,17 @@ final class CurrenciesTableView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.layer.addSublayer(gradient)
-        self.setupSubViews()
-        self.setupConstraints()
-    }
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        self.layer.addSublayer(gradient)
         self.setupSubViews()
         self.setupConstraints()
     }
     
-    private func setupSubViews(){
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.setupSubViews()
+        self.setupConstraints()
+    }
+    
+    private func setupSubViews() {
         self.addSubview(self.titleLabel)
         self.addSubview(self.tableView)
     }
@@ -61,7 +57,6 @@ final class CurrenciesTableView: UIView {
         }
     }
 
-    
     override func layoutSubviews() {
         super.layoutSubviews()
         self.setupConstraints()
@@ -69,11 +64,5 @@ final class CurrenciesTableView: UIView {
         self.clipsToBounds = true
         self.layer.cornerRadius = self.frame.height / 10
         self.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
-        
-        gradient.frame = self.bounds
     }
-   
-    
 }
-
-

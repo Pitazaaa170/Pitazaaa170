@@ -9,9 +9,6 @@ import UIKit
 import SnapKit
 
 final class BalanceView: UIView {
-    
-    private let  gradient = CAGradientLayer.getFirstCustomGradient()
-    
     // MARK: - Subviews
     private var balanceDescriptionLabel: UILabel = {
         let label = UILabel()
@@ -43,13 +40,11 @@ final class BalanceView: UIView {
     // MARK: - Init
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.layer.addSublayer(gradient)
         self.setupSubViews()
         self.setupConstraints()
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.layer.addSublayer(gradient)
         self.setupSubViews()
         self.setupConstraints()
     }
@@ -85,8 +80,6 @@ final class BalanceView: UIView {
         
         self.clipsToBounds = true
         self.layer.cornerRadius = self.frame.height / 6
-        
-        gradient.frame = self.bounds
     }
     
     func updateBalance(balance: String){

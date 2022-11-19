@@ -34,8 +34,11 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setGradientBackground()
-        
+        view.applyGradient(
+            colors: [.black, .purple],
+            startPoint: .zero,
+            endPoint: CGPoint(x: 1, y: 1)
+        )
         setUpButtonsLayout()
         setUpLabelLayout()
         setUpLogoLayout()
@@ -76,19 +79,6 @@ class LoginViewController: UIViewController {
             button: button
         )
         present(vc, animated: true)
-    }
-
-    // TODO: move to custom GradientView
-    private func setGradientBackground() {
-        let colorTop =  UIColor.black.cgColor
-        let colorBottom = UIColor.purple.cgColor
-                    
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.colors = [colorTop, colorBottom, colorTop]
-        gradientLayer.locations = [0.0, 0.5, 1.0]
-        gradientLayer.frame = view.bounds
-                
-        view.layer.insertSublayer(gradientLayer, at:0)
     }
 }
 

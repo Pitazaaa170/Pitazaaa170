@@ -13,9 +13,9 @@ class CurrenciesTableViewController: UIViewController {
         return self.view as? CurrenciesTableView ?? CurrenciesTableView()
     }
     
-    private var photoService:PhotoService!
+    private var photoService: PhotoService!
 
-    var userCurrencies:[UserCurrency]? {
+    var userCurrencies: [UserCurrency]? {
         didSet {
             DispatchQueue.main.async {
                 self.currenciesTableView.tableView.reloadData()
@@ -38,6 +38,11 @@ class CurrenciesTableViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.applyGradient(
+            colors: [.black, .purple],
+            startPoint: CGPoint(x: 0, y: 1),
+            endPoint: .zero
+        )
         setupTableView()
         photoService = PhotoService(container: currenciesTableView.tableView)
     }

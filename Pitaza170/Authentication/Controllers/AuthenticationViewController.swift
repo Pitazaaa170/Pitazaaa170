@@ -27,7 +27,11 @@ class AuthenticationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .black
+        view.applyGradient(
+            colors: [.black, .purple],
+            startPoint: CGPoint(x: 0, y: 1),
+            endPoint: .zero
+        )
         setUpLayout()
     }
     
