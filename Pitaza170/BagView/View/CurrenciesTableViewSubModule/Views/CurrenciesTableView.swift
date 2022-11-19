@@ -18,7 +18,7 @@ final class CurrenciesTableView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .white
         label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 32, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: 25, weight: .bold)
         return label
     }()
     
@@ -26,7 +26,7 @@ final class CurrenciesTableView: UIView {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.showsVerticalScrollIndicator = false
-        tableView.rowHeight = UITableView.automaticDimension
+        tableView.rowHeight = 55
         tableView.backgroundColor = nil
         return tableView
     }()
@@ -52,12 +52,12 @@ final class CurrenciesTableView: UIView {
     private func setupConstraints() {
 
         self.titleLabel.snp.makeConstraints { make in
-            make.top.left.right.equalToSuperview().inset(frame.height / 10)
+            make.top.left.right.equalToSuperview().inset(10)
         }
         
         self.tableView.snp.makeConstraints { make in
-            make.top.equalTo(titleLabel.snp.bottom).inset(frame.height / 10)
-            make.left.right.bottom.equalToSuperview().inset(frame.height / 10)
+            make.top.equalTo(titleLabel.snp.bottom).inset(-20)
+            make.left.right.bottom.equalToSuperview().inset(10)
         }
     }
 
@@ -67,7 +67,7 @@ final class CurrenciesTableView: UIView {
         self.setupConstraints()
         
         self.clipsToBounds = true
-        self.layer.cornerRadius = self.frame.height / 6
+        self.layer.cornerRadius = self.frame.height / 10
         self.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         
         gradient.frame = self.bounds

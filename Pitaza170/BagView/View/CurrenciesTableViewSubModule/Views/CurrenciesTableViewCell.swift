@@ -12,22 +12,23 @@ class CurrenciesTableViewCell: UITableViewCell {
     
     static let identifier: String = "CurrenciesCell"
 
-    var image:UIImageView = {
-        var image = UIImageView(frame: CGRect(x: 0, y: 0, width: 45, height: 45))
+    var image: UIImageView = {
+        var image = UIImageView()
         image.contentMode = .scaleAspectFill
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
     
-    var nameLabel:UILabel = {
+    var nameLabel: UILabel = {
         var label = UILabel()
         label.font = .systemFont(ofSize: 20, weight: .bold)
         label.textAlignment = .left
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .white
         return label
     }()
     
-    var descriptionLabel:UILabel = {
+    var descriptionLabel: UILabel = {
         var label = UILabel()
         label.font = .systemFont(ofSize: 14, weight: .medium)
         label.textAlignment = .left
@@ -36,16 +37,17 @@ class CurrenciesTableViewCell: UITableViewCell {
         return label
     }()
     
-    var balanceLabel:UILabel = {
+    var balanceLabel: UILabel = {
         var label = UILabel()
         label.font = .systemFont(ofSize: 20, weight: .bold)
         label.numberOfLines = 1
         label.textAlignment = .right
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .white
         return label
     }()
     
-    var growLabel:UILabel = {
+    var growLabel: UILabel = {
         var label = UILabel()
         label.font = .systemFont(ofSize: 14, weight: .medium)
         label.textAlignment = .right
@@ -77,16 +79,17 @@ class CurrenciesTableViewCell: UITableViewCell {
         
         self.image.snp.makeConstraints { make in
             make.top.left.bottom.equalToSuperview().inset(5)
+            make.width.equalTo(45)
         }
         
         self.nameLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(5)
-            make.left.equalTo(image.snp.right).inset(5)
+            make.left.equalTo(image.snp.right).inset(-10)
         }
         
         self.descriptionLabel.snp.makeConstraints { make in
             make.top.equalTo(nameLabel.snp.bottom).inset(5)
-            make.left.equalTo(image.snp.right).inset(5)
+            make.left.equalTo(image.snp.right).inset(-10)
             make.bottom.equalToSuperview().inset(5)
         }
         

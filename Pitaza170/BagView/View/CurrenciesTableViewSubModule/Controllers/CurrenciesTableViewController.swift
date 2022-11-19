@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 class CurrenciesTableViewController: UIViewController {
             
     private var currenciesTableView: CurrenciesTableView {
@@ -17,11 +16,10 @@ class CurrenciesTableViewController: UIViewController {
     private var photoService:PhotoService!
 
     var userCurrencies:[UserCurrency]? {
-        didSet
-        {
+        didSet {
             DispatchQueue.main.async {
                 self.currenciesTableView.tableView.reloadData()
-            }
+               }
         }
     }
     
@@ -44,7 +42,7 @@ class CurrenciesTableViewController: UIViewController {
         photoService = PhotoService(container: currenciesTableView.tableView)
     }
     
-    func setupTableView(){
+    func setupTableView() {
         currenciesTableView.tableView.register(CurrenciesTableViewCell.self, forCellReuseIdentifier: CurrenciesTableViewCell.identifier)
         currenciesTableView.tableView.delegate = self
         currenciesTableView.tableView.dataSource = self
@@ -54,11 +52,11 @@ class CurrenciesTableViewController: UIViewController {
 
 extension CurrenciesTableViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        userCurrencies?.count ?? 0
+        return userCurrencies?.count ?? 0
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -73,7 +71,7 @@ extension CurrenciesTableViewController: UITableViewDelegate, UITableViewDataSou
                        description: currency.description,
                        balance: currency.balance,
                        grow: currency.grow,
-                       positive:currency.positive)
+                       positive: currency.positive)
         return cell
     }
     
