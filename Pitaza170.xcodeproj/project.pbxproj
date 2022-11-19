@@ -25,6 +25,12 @@
 		2CEEC3B129291E4000652C35 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEEC3B029291E4000652C35 /* UIView+Extension.swift */; };
 		2DF7061CC45C54A8D878C42A /* Pods_Pitaza170.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A56304943E601CB2C32C34 /* Pods_Pitaza170.framework */; };
 		944C72E1ECCA0B94D47035A2 /* Pods_Pitaza170Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F55553A29B707A4EE31E1F61 /* Pods_Pitaza170Tests.framework */; };
+		AD44D3CC292989E400AF297F /* CurrencyViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D3C3292989E400AF297F /* CurrencyViewPresenter.swift */; };
+		AD44D3CD292989E400AF297F /* InputOutputCurInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D3C4292989E400AF297F /* InputOutputCurInfoView.swift */; };
+		AD44D3CE292989E400AF297F /* InfoCurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D3C8292989E400AF297F /* InfoCurView.swift */; };
+		AD44D3CF292989E400AF297F /* InfoCurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D3C9292989E400AF297F /* InfoCurViewController.swift */; };
+		AD44D3D0292989E400AF297F /* CurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D3CA292989E400AF297F /* CurrencyView.swift */; };
+		AD44D3D1292989E400AF297F /* CurrencyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D3CB292989E400AF297F /* CurrencyInfoViewController.swift */; };
 		ADE3341F292910B100DDB303 /* InternetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3341E292910B100DDB303 /* InternetService.swift */; };
 		ADE33421292910B200DDB303 /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE33420292910B200DDB303 /* PhotoService.swift */; };
 		ADE3343C292911E500DDB303 /* InputOutputBagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3342B292911E500DDB303 /* InputOutputBagView.swift */; };
@@ -81,6 +87,12 @@
 		31E6FA5707C44548DDD31F8B /* Pods-Pitaza170.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170.release.xcconfig"; path = "Target Support Files/Pods-Pitaza170/Pods-Pitaza170.release.xcconfig"; sourceTree = "<group>"; };
 		61A56304943E601CB2C32C34 /* Pods_Pitaza170.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pitaza170.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB667142094942B3054B3B7 /* Pods-Pitaza170.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170.debug.xcconfig"; path = "Target Support Files/Pods-Pitaza170/Pods-Pitaza170.debug.xcconfig"; sourceTree = "<group>"; };
+		AD44D3C3292989E400AF297F /* CurrencyViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyViewPresenter.swift; sourceTree = "<group>"; };
+		AD44D3C4292989E400AF297F /* InputOutputCurInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputOutputCurInfoView.swift; sourceTree = "<group>"; };
+		AD44D3C8292989E400AF297F /* InfoCurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoCurView.swift; sourceTree = "<group>"; };
+		AD44D3C9292989E400AF297F /* InfoCurViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoCurViewController.swift; sourceTree = "<group>"; };
+		AD44D3CA292989E400AF297F /* CurrencyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyView.swift; sourceTree = "<group>"; };
+		AD44D3CB292989E400AF297F /* CurrencyInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyInfoViewController.swift; sourceTree = "<group>"; };
 		ADE3341E292910B100DDB303 /* InternetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetService.swift; sourceTree = "<group>"; };
 		ADE33420292910B200DDB303 /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
 		ADE3342B292911E500DDB303 /* InputOutputBagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputOutputBagView.swift; sourceTree = "<group>"; };
@@ -164,6 +176,7 @@
 		2C8F273B2927F67F0014B007 /* Pitaza170 */ = {
 			isa = PBXGroup;
 			children = (
+				AD44D3C1292989E400AF297F /* CurrencyInfoView */,
 				2C8F276C2927FAAA0014B007 /* AppGraph.swift */,
 				2CEEC3AC29291DE500652C35 /* CommonUI */,
 				ADE33429292911E500DDB303 /* BagView */,
@@ -253,6 +266,51 @@
 				2CEEC3B029291E4000652C35 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AD44D3C1292989E400AF297F /* CurrencyInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				AD44D3C2292989E400AF297F /* Presenter */,
+				AD44D3C5292989E400AF297F /* Model */,
+				AD44D3C6292989E400AF297F /* View */,
+			);
+			path = CurrencyInfoView;
+			sourceTree = "<group>";
+		};
+		AD44D3C2292989E400AF297F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AD44D3C3292989E400AF297F /* CurrencyViewPresenter.swift */,
+				AD44D3C4292989E400AF297F /* InputOutputCurInfoView.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AD44D3C5292989E400AF297F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD44D3C6292989E400AF297F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD44D3C7292989E400AF297F /* InfoCurModule */,
+				AD44D3CA292989E400AF297F /* CurrencyView.swift */,
+				AD44D3CB292989E400AF297F /* CurrencyInfoViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD44D3C7292989E400AF297F /* InfoCurModule */ = {
+			isa = PBXGroup;
+			children = (
+				AD44D3C8292989E400AF297F /* InfoCurView.swift */,
+				AD44D3C9292989E400AF297F /* InfoCurViewController.swift */,
+			);
+			path = InfoCurModule;
 			sourceTree = "<group>";
 		};
 		ADE33429292911E500DDB303 /* BagView */ = {
@@ -612,6 +670,7 @@
 				2C0655DB292820E1006F79DA /* InsetsProvider.swift in Sources */,
 				ADE3343E292911E500DDB303 /* UserCurrencyModel.swift in Sources */,
 				2C8F2779292813BB0014B007 /* LoginViewController.swift in Sources */,
+				AD44D3D1292989E400AF297F /* CurrencyInfoViewController.swift in Sources */,
 				2C8F276D2927FAAA0014B007 /* AppGraph.swift in Sources */,
 				ADE3341F292910B100DDB303 /* InternetService.swift in Sources */,
 				2C0655DD29282CA3006F79DA /* AuthenticationViewController.swift in Sources */,
@@ -620,18 +679,23 @@
 				ADE33442292911E500DDB303 /* BalanceView.swift in Sources */,
 				ADE3343D292911E500DDB303 /* BagViewPresenter.swift in Sources */,
 				2CEEC3AF29291E1900652C35 /* CAGradientLayer+Extension.swift in Sources */,
+				AD44D3D0292989E400AF297F /* CurrencyView.swift in Sources */,
 				2C8F273D2927F67F0014B007 /* AppDelegate.swift in Sources */,
 				ADE33444292911E500DDB303 /* CurrenciesTableViewController.swift in Sources */,
 				2C8F273F2927F67F0014B007 /* SceneDelegate.swift in Sources */,
 				ADE33421292910B200DDB303 /* PhotoService.swift in Sources */,
 				ADE33441292911E500DDB303 /* BalanceViewController.swift in Sources */,
+				AD44D3CD292989E400AF297F /* InputOutputCurInfoView.swift in Sources */,
 				ADE3343C292911E500DDB303 /* InputOutputBagView.swift in Sources */,
 				ADE33446292911E500DDB303 /* CurrenciesTableView.swift in Sources */,
 				2CEEC3B129291E4000652C35 /* UIView+Extension.swift in Sources */,
 				2C8F277E292816BF0014B007 /* AuthenticationButton.swift in Sources */,
+				AD44D3CC292989E400AF297F /* CurrencyViewPresenter.swift in Sources */,
+				AD44D3CF292989E400AF297F /* InfoCurViewController.swift in Sources */,
 				ADE33440292911E500DDB303 /* BagViewController.swift in Sources */,
 				ADE3343F292911E500DDB303 /* UserRubles.swift in Sources */,
 				ADE33443292911E500DDB303 /* BagView.swift in Sources */,
+				AD44D3CE292989E400AF297F /* InfoCurView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

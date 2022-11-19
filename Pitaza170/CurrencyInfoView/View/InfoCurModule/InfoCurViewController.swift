@@ -86,5 +86,13 @@ final class InfoCurViewController: UIViewController {
     
     }
     
+    override func viewDidLayoutSubviews() {
+        view.applyGradient(
+            colors: [.myPurple, .myGreen],
+            startPoint: .zero,
+            endPoint: CGPoint(x: 1, y: 1)
+        )
+    }
+    
     
 }

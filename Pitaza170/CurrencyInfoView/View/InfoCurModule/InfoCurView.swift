@@ -10,7 +10,6 @@ import SnapKit
 
 final class InfoCurView: UIView {
     
-    private let  gradient = CAGradientLayer.getFirstCustomGradient()
         
     var image: UIImageView = {
         var image = UIImageView()
@@ -123,7 +122,6 @@ final class InfoCurView: UIView {
         self.layer.cornerRadius = self.frame.width / 10
         self.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
         
-        gradient.frame = self.bounds
     }
     
     func updateInfo(imageNew:UIImage, name:String, descr:String, balance:String, grow:String, positive:Bool){
