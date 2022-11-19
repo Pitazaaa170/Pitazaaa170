@@ -9,9 +9,7 @@ import UIKit
 import SnapKit
 
 final class GlobalCurrenciesTableView: UIView {
-    
-    private let  gradient = CAGradientLayer.getThirdCustomGradient()
-    
+        
     var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false

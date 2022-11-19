@@ -46,12 +46,8 @@ final class BagViewController: UIViewController {
         self.configureUI()
         self.presenter.viewDidLoadCurrencies()
         self.presenter.viewDidLoadRubles()
-        view.applyGradient(
-            colors: [.black, .purple],
-            startPoint: .zero,
-            endPoint: CGPoint(x: 1, y: 1)
-        )
     }
+    
     
     // MARK: - Private
     

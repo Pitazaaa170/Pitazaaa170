@@ -90,6 +90,12 @@ final class CurrencyInfoViewController: UIViewController {
         
         sellButton.layer.cornerRadius = sellButton.frame.height/2
         sellButton.layer.masksToBounds = true
+        
+        view.applyGradient(
+            colors: [.myPurple, .black],
+            startPoint: CGPoint(x: 0.5, y: 0),
+            endPoint: CGPoint(x: 0.5, y: 1)
+        )
     }
 }
 

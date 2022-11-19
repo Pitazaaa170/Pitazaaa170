@@ -48,6 +48,14 @@ class GlobalCurrenciesTableViewController: UIViewController {
         view.addGestureRecognizer(tapGesture)
     }
     
+    override func viewWillLayoutSubviews() {
+        view.applyGradient(
+            colors: [.myGreen, .myPurple],
+            startPoint: .zero,
+            endPoint: CGPoint(x: 1, y: 1)
+        )
+    }
+    
     @objc func tapGesture() {
         currenciesTableView.searchBar.searchTextField.resignFirstResponder()
     }

@@ -32,9 +32,9 @@ class BalanceViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
-    override func viewDidLoad() {
+    override func viewWillLayoutSubviews() {
         view.applyGradient(
-            colors: [.black, .purple],
+            colors: [.myPurple, .myGreen],
             startPoint: .zero,
             endPoint: CGPoint(x: 1, y: 1)
         )
