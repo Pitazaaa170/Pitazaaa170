@@ -38,7 +38,6 @@
 		ADE33444292911E500DDB303 /* CurrenciesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE33438292911E500DDB303 /* CurrenciesTableViewController.swift */; };
 		ADE33445292911E500DDB303 /* CurrenciesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3343A292911E500DDB303 /* CurrenciesTableViewCell.swift */; };
 		ADE33446292911E500DDB303 /* CurrenciesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3343B292911E500DDB303 /* CurrenciesTableView.swift */; };
-		ADE334492929123F00DDB303 /* CAGradientLayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE334482929123F00DDB303 /* CAGradientLayerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +94,6 @@
 		ADE33438292911E500DDB303 /* CurrenciesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrenciesTableViewController.swift; sourceTree = "<group>"; };
 		ADE3343A292911E500DDB303 /* CurrenciesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrenciesTableViewCell.swift; sourceTree = "<group>"; };
 		ADE3343B292911E500DDB303 /* CurrenciesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrenciesTableView.swift; sourceTree = "<group>"; };
-		ADE334482929123F00DDB303 /* CAGradientLayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAGradientLayerExtension.swift; sourceTree = "<group>"; };
 		D7B158A318DE6755767C381E /* Pods-Pitaza170-Pitaza170UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170-Pitaza170UITests.release.xcconfig"; path = "Target Support Files/Pods-Pitaza170-Pitaza170UITests/Pods-Pitaza170-Pitaza170UITests.release.xcconfig"; sourceTree = "<group>"; };
 		DBC457AB74D17D5C0E853538 /* Pods-Pitaza170Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170Tests.debug.xcconfig"; path = "Target Support Files/Pods-Pitaza170Tests/Pods-Pitaza170Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F0836D9C1D67527B8406E195 /* Pods-Pitaza170Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170Tests.release.xcconfig"; path = "Target Support Files/Pods-Pitaza170Tests/Pods-Pitaza170Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,10 +164,9 @@
 		2C8F273B2927F67F0014B007 /* Pitaza170 */ = {
 			isa = PBXGroup;
 			children = (
-				2CEEC3AC29291DE500652C35 /* CommonUI */,
-				ADE334472929123F00DDB303 /* Extension */,
-				ADE33429292911E500DDB303 /* BagView */,
 				2C8F276C2927FAAA0014B007 /* AppGraph.swift */,
+				2CEEC3AC29291DE500652C35 /* CommonUI */,
+				ADE33429292911E500DDB303 /* BagView */,
 				2C8F27772928137F0014B007 /* Authentication */,
 				2C0655D929282086006F79DA /* Services */,
 				2C8F276F292802720014B007 /* Supporting files */,
@@ -330,14 +327,6 @@
 				ADE3343B292911E500DDB303 /* CurrenciesTableView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		ADE334472929123F00DDB303 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				ADE334482929123F00DDB303 /* CAGradientLayerExtension.swift */,
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		BBB3197462214AAAE4C17476 /* Frameworks */ = {
@@ -643,7 +632,6 @@
 				ADE33440292911E500DDB303 /* BagViewController.swift in Sources */,
 				ADE3343F292911E500DDB303 /* UserRubles.swift in Sources */,
 				ADE33443292911E500DDB303 /* BagView.swift in Sources */,
-				ADE334492929123F00DDB303 /* CAGradientLayerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
