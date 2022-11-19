@@ -23,6 +23,20 @@
 		2C8F277E292816BF0014B007 /* AuthenticationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F277D292816BF0014B007 /* AuthenticationButton.swift */; };
 		2DF7061CC45C54A8D878C42A /* Pods_Pitaza170.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A56304943E601CB2C32C34 /* Pods_Pitaza170.framework */; };
 		944C72E1ECCA0B94D47035A2 /* Pods_Pitaza170Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F55553A29B707A4EE31E1F61 /* Pods_Pitaza170Tests.framework */; };
+		ADE3341F292910B100DDB303 /* InternetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3341E292910B100DDB303 /* InternetService.swift */; };
+		ADE33421292910B200DDB303 /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE33420292910B200DDB303 /* PhotoService.swift */; };
+		ADE3343C292911E500DDB303 /* InputOutputBagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3342B292911E500DDB303 /* InputOutputBagView.swift */; };
+		ADE3343D292911E500DDB303 /* BagViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3342C292911E500DDB303 /* BagViewPresenter.swift */; };
+		ADE3343E292911E500DDB303 /* UserCurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3342E292911E500DDB303 /* UserCurrencyModel.swift */; };
+		ADE3343F292911E500DDB303 /* UserRubles.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3342F292911E500DDB303 /* UserRubles.swift */; };
+		ADE33440292911E500DDB303 /* BagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE33431292911E500DDB303 /* BagViewController.swift */; };
+		ADE33441292911E500DDB303 /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE33433292911E500DDB303 /* BalanceViewController.swift */; };
+		ADE33442292911E500DDB303 /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE33434292911E500DDB303 /* BalanceView.swift */; };
+		ADE33443292911E500DDB303 /* BagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE33435292911E500DDB303 /* BagView.swift */; };
+		ADE33444292911E500DDB303 /* CurrenciesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE33438292911E500DDB303 /* CurrenciesTableViewController.swift */; };
+		ADE33445292911E500DDB303 /* CurrenciesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3343A292911E500DDB303 /* CurrenciesTableViewCell.swift */; };
+		ADE33446292911E500DDB303 /* CurrenciesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3343B292911E500DDB303 /* CurrenciesTableView.swift */; };
+		ADE334492929123F00DDB303 /* CAGradientLayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE334482929123F00DDB303 /* CAGradientLayerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +78,20 @@
 		31E6FA5707C44548DDD31F8B /* Pods-Pitaza170.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170.release.xcconfig"; path = "Target Support Files/Pods-Pitaza170/Pods-Pitaza170.release.xcconfig"; sourceTree = "<group>"; };
 		61A56304943E601CB2C32C34 /* Pods_Pitaza170.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pitaza170.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB667142094942B3054B3B7 /* Pods-Pitaza170.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170.debug.xcconfig"; path = "Target Support Files/Pods-Pitaza170/Pods-Pitaza170.debug.xcconfig"; sourceTree = "<group>"; };
+		ADE3341E292910B100DDB303 /* InternetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetService.swift; sourceTree = "<group>"; };
+		ADE33420292910B200DDB303 /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
+		ADE3342B292911E500DDB303 /* InputOutputBagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputOutputBagView.swift; sourceTree = "<group>"; };
+		ADE3342C292911E500DDB303 /* BagViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BagViewPresenter.swift; sourceTree = "<group>"; };
+		ADE3342E292911E500DDB303 /* UserCurrencyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCurrencyModel.swift; sourceTree = "<group>"; };
+		ADE3342F292911E500DDB303 /* UserRubles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRubles.swift; sourceTree = "<group>"; };
+		ADE33431292911E500DDB303 /* BagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BagViewController.swift; sourceTree = "<group>"; };
+		ADE33433292911E500DDB303 /* BalanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
+		ADE33434292911E500DDB303 /* BalanceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
+		ADE33435292911E500DDB303 /* BagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BagView.swift; sourceTree = "<group>"; };
+		ADE33438292911E500DDB303 /* CurrenciesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrenciesTableViewController.swift; sourceTree = "<group>"; };
+		ADE3343A292911E500DDB303 /* CurrenciesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrenciesTableViewCell.swift; sourceTree = "<group>"; };
+		ADE3343B292911E500DDB303 /* CurrenciesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrenciesTableView.swift; sourceTree = "<group>"; };
+		ADE334482929123F00DDB303 /* CAGradientLayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAGradientLayerExtension.swift; sourceTree = "<group>"; };
 		D7B158A318DE6755767C381E /* Pods-Pitaza170-Pitaza170UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170-Pitaza170UITests.release.xcconfig"; path = "Target Support Files/Pods-Pitaza170-Pitaza170UITests/Pods-Pitaza170-Pitaza170UITests.release.xcconfig"; sourceTree = "<group>"; };
 		DBC457AB74D17D5C0E853538 /* Pods-Pitaza170Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170Tests.debug.xcconfig"; path = "Target Support Files/Pods-Pitaza170Tests/Pods-Pitaza170Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F0836D9C1D67527B8406E195 /* Pods-Pitaza170Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitaza170Tests.release.xcconfig"; path = "Target Support Files/Pods-Pitaza170Tests/Pods-Pitaza170Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +130,8 @@
 		2C0655D929282086006F79DA /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				ADE3341E292910B100DDB303 /* InternetService.swift */,
+				ADE33420292910B200DDB303 /* PhotoService.swift */,
 				2C0655DA292820E1006F79DA /* InsetsProvider.swift */,
 			);
 			path = Services;
@@ -132,6 +162,8 @@
 		2C8F273B2927F67F0014B007 /* Pitaza170 */ = {
 			isa = PBXGroup;
 			children = (
+				ADE334472929123F00DDB303 /* Extension */,
+				ADE33429292911E500DDB303 /* BagView */,
 				2C8F276C2927FAAA0014B007 /* AppGraph.swift */,
 				2C8F27772928137F0014B007 /* Authentication */,
 				2C0655D929282086006F79DA /* Services */,
@@ -202,6 +234,88 @@
 				2C0655DC29282CA3006F79DA /* AuthenticationViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ADE33429292911E500DDB303 /* BagView */ = {
+			isa = PBXGroup;
+			children = (
+				ADE3342A292911E500DDB303 /* Presenter */,
+				ADE3342D292911E500DDB303 /* Model */,
+				ADE33430292911E500DDB303 /* View */,
+			);
+			path = BagView;
+			sourceTree = "<group>";
+		};
+		ADE3342A292911E500DDB303 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				ADE3342B292911E500DDB303 /* InputOutputBagView.swift */,
+				ADE3342C292911E500DDB303 /* BagViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		ADE3342D292911E500DDB303 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ADE3342E292911E500DDB303 /* UserCurrencyModel.swift */,
+				ADE3342F292911E500DDB303 /* UserRubles.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ADE33430292911E500DDB303 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADE33431292911E500DDB303 /* BagViewController.swift */,
+				ADE33432292911E500DDB303 /* BalanceSubModule */,
+				ADE33435292911E500DDB303 /* BagView.swift */,
+				ADE33436292911E500DDB303 /* CurrenciesTableViewSubModule */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ADE33432292911E500DDB303 /* BalanceSubModule */ = {
+			isa = PBXGroup;
+			children = (
+				ADE33433292911E500DDB303 /* BalanceViewController.swift */,
+				ADE33434292911E500DDB303 /* BalanceView.swift */,
+			);
+			path = BalanceSubModule;
+			sourceTree = "<group>";
+		};
+		ADE33436292911E500DDB303 /* CurrenciesTableViewSubModule */ = {
+			isa = PBXGroup;
+			children = (
+				ADE33437292911E500DDB303 /* Controllers */,
+				ADE33439292911E500DDB303 /* Views */,
+			);
+			path = CurrenciesTableViewSubModule;
+			sourceTree = "<group>";
+		};
+		ADE33437292911E500DDB303 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ADE33438292911E500DDB303 /* CurrenciesTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ADE33439292911E500DDB303 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADE3343A292911E500DDB303 /* CurrenciesTableViewCell.swift */,
+				ADE3343B292911E500DDB303 /* CurrenciesTableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ADE334472929123F00DDB303 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ADE334482929123F00DDB303 /* CAGradientLayerExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		BBB3197462214AAAE4C17476 /* Frameworks */ = {
@@ -485,13 +599,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C0655DB292820E1006F79DA /* InsetsProvider.swift in Sources */,
+				ADE3343E292911E500DDB303 /* UserCurrencyModel.swift in Sources */,
 				2C8F2779292813BB0014B007 /* LoginViewController.swift in Sources */,
 				2C8F276D2927FAAA0014B007 /* AppGraph.swift in Sources */,
+				ADE3341F292910B100DDB303 /* InternetService.swift in Sources */,
 				2C0655DD29282CA3006F79DA /* AuthenticationViewController.swift in Sources */,
+				ADE33445292911E500DDB303 /* CurrenciesTableViewCell.swift in Sources */,
 				2C0655DF292835B1006F79DA /* AuthenticationTextField.swift in Sources */,
+				ADE33442292911E500DDB303 /* BalanceView.swift in Sources */,
+				ADE3343D292911E500DDB303 /* BagViewPresenter.swift in Sources */,
 				2C8F273D2927F67F0014B007 /* AppDelegate.swift in Sources */,
+				ADE33444292911E500DDB303 /* CurrenciesTableViewController.swift in Sources */,
 				2C8F273F2927F67F0014B007 /* SceneDelegate.swift in Sources */,
+				ADE33421292910B200DDB303 /* PhotoService.swift in Sources */,
+				ADE33441292911E500DDB303 /* BalanceViewController.swift in Sources */,
+				ADE3343C292911E500DDB303 /* InputOutputBagView.swift in Sources */,
+				ADE33446292911E500DDB303 /* CurrenciesTableView.swift in Sources */,
 				2C8F277E292816BF0014B007 /* AuthenticationButton.swift in Sources */,
+				ADE33440292911E500DDB303 /* BagViewController.swift in Sources */,
+				ADE3343F292911E500DDB303 /* UserRubles.swift in Sources */,
+				ADE33443292911E500DDB303 /* BagView.swift in Sources */,
+				ADE334492929123F00DDB303 /* CAGradientLayerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
