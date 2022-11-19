@@ -37,7 +37,7 @@ class LoginViewController: UIViewController {
         view.applyGradient(
             colors: [.black, .purple],
             startPoint: .zero,
-            endPoint: CGPoint(x: 1, y: 1)
+            endPoint: CGPoint(x: 0, y: 1)
         )
         setUpButtonsLayout()
         setUpLabelLayout()
@@ -47,8 +47,23 @@ class LoginViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        loginButton.layer.cornerRadius = loginButton.frame.height / 2
-        registrationButton.layer.cornerRadius = registrationButton.frame.height / 2
+        loginButton.applyGradient(
+            colors: [.purple, .black],
+            startPoint: CGPoint(x: 0, y: 0.5),
+            endPoint: CGPoint(x: 1, y: 0.5)
+        )
+        loginButton.layer.sublayers?.forEach {
+            $0.cornerRadius = loginButton.frame.height / 2
+        }
+        
+        registrationButton.applyGradient(
+            colors: [.purple, .black],
+            startPoint: CGPoint(x: 0, y: 0.5),
+            endPoint: CGPoint(x: 1, y: 0.5)
+        )
+        registrationButton.layer.sublayers?.forEach {
+            $0.cornerRadius = loginButton.frame.height / 2
+        }
     }
     
     private func setUpActions() {
@@ -120,6 +135,7 @@ extension LoginViewController {
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
             make.centerX.equalToSuperview()
             make.bottom.equalTo(view.snp.centerY)
+            make.width.equalTo(logoImage.snp.height)
         }
     }
 }
