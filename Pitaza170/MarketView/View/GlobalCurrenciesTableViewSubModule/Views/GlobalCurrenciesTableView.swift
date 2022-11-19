@@ -43,7 +43,7 @@ final class GlobalCurrenciesTableView: UIView {
         self.setupConstraints()
     }
     
-    private func setupSubViews(){
+    private func setupSubViews() {
         self.addSubview(self.tableView)
         self.addSubview(self.searchBar)
     }
@@ -59,7 +59,6 @@ final class GlobalCurrenciesTableView: UIView {
         }
     }
 
-    
     override func layoutSubviews() {
         super.layoutSubviews()
         
@@ -70,8 +69,4 @@ final class GlobalCurrenciesTableView: UIView {
         gradient.frame = self.bounds
         
     }
-   
-    
 }
-
-

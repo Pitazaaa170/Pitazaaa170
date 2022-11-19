@@ -29,6 +29,13 @@ class CurrenciesTableViewController: UIViewController {
     }
     
     init() {
+        // temporary for testing
+        userCurrencies = [
+            UserCurrency(
+                image: "", name: "USD", description: "1 доллар США",
+                balance: "10", grow: "", positive: true
+            )
+        ]
         super.init(nibName: nil, bundle: nil)
     }
     

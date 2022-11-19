@@ -39,8 +39,22 @@ class AuthenticationViewController: UIViewController {
         for element in [button, loginTF, passwordTF] {
             element.layer.cornerRadius = element.frame.height / 2
         }
+        button.applyGradient(
+            colors: [.purple, .black],
+            startPoint: CGPoint(x: Double.randCord(), y: Double.randCord()),
+            endPoint: CGPoint(x: Double.randCord(), y: Double.randCord())
+        )
+        button.layer.sublayers?.forEach {
+            $0.cornerRadius = button.frame.height / 2
+        }
     }
 
+}
+
+extension Double {
+    static fileprivate func randCord() -> Self {
+        return Self.random(in: 0.0...1.0)
+    }
 }
 
 // MARK: Set Up Layout

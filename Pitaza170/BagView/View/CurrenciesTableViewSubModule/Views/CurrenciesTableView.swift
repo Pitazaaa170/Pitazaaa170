@@ -9,6 +9,7 @@ import UIKit
 import SnapKit
 
 final class CurrenciesTableView: UIView {
+    // TODO: Make DI to use it in history table in profile page
     var titleLabel: UILabel = {
         let label = UILabel()
         label.text = "Мои валюты"

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class currencyInfoView: UIView {
+class CurrencyInfoView: UIView {
         
     override init(frame: CGRect) {
         super.init(frame: frame)
