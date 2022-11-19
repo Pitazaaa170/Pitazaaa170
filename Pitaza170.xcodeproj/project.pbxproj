@@ -13,7 +13,6 @@
 		2C0655DF292835B1006F79DA /* AuthenticationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0655DE292835B1006F79DA /* AuthenticationTextField.swift */; };
 		2C8F273D2927F67F0014B007 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F273C2927F67F0014B007 /* AppDelegate.swift */; };
 		2C8F273F2927F67F0014B007 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F273E2927F67F0014B007 /* SceneDelegate.swift */; };
-		2C8F27412927F67F0014B007 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F27402927F67F0014B007 /* ViewController.swift */; };
 		2C8F27462927F6810014B007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C8F27452927F6810014B007 /* Assets.xcassets */; };
 		2C8F27492927F6810014B007 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8F27472927F6810014B007 /* LaunchScreen.storyboard */; };
 		2C8F27542927F6810014B007 /* Pitaza170Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F27532927F6810014B007 /* Pitaza170Tests.swift */; };
@@ -51,7 +50,6 @@
 		2C8F27392927F67F0014B007 /* Pitaza170.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pitaza170.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C8F273C2927F67F0014B007 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C8F273E2927F67F0014B007 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2C8F27402927F67F0014B007 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C8F27452927F6810014B007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C8F27482927F6810014B007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C8F274A2927F6810014B007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,7 +137,6 @@
 				2C0655D929282086006F79DA /* Services */,
 				2C8F276F292802720014B007 /* Supporting files */,
 				2C8F2776292812FA0014B007 /* Resources */,
-				2C8F27402927F67F0014B007 /* ViewController.swift */,
 				2C8F274A2927F6810014B007 /* Info.plist */,
 			);
 			path = Pitaza170;
@@ -490,7 +487,6 @@
 				2C0655DB292820E1006F79DA /* InsetsProvider.swift in Sources */,
 				2C8F2779292813BB0014B007 /* LoginViewController.swift in Sources */,
 				2C8F276D2927FAAA0014B007 /* AppGraph.swift in Sources */,
-				2C8F27412927F67F0014B007 /* ViewController.swift in Sources */,
 				2C0655DD29282CA3006F79DA /* AuthenticationViewController.swift in Sources */,
 				2C0655DF292835B1006F79DA /* AuthenticationTextField.swift in Sources */,
 				2C8F273D2927F67F0014B007 /* AppDelegate.swift in Sources */,
