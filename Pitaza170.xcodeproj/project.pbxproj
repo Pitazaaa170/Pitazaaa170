@@ -44,6 +44,24 @@
 		AD44D3E829298CD500AF297F /* GlobalCurrenciesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D3E029298CD500AF297F /* GlobalCurrenciesTableViewCell.swift */; };
 		AD44D3E929298CD500AF297F /* GlobalCurrenciesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D3E129298CD500AF297F /* GlobalCurrenciesTableView.swift */; };
 		AD44D3EA29298CD500AF297F /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D3E229298CD500AF297F /* MarketViewController.swift */; };
+		AD44D4672929C06C00AF297F /* InputOutputAdminUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D4492929C06C00AF297F /* InputOutputAdminUsersView.swift */; };
+		AD44D4682929C06C00AF297F /* AdminUsersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D44A2929C06C00AF297F /* AdminUsersPresenter.swift */; };
+		AD44D4692929C06C00AF297F /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D44C2929C06C00AF297F /* UsersModel.swift */; };
+		AD44D46A2929C06C00AF297F /* AdminUsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D4502929C06C00AF297F /* AdminUsersTableViewController.swift */; };
+		AD44D46B2929C06C00AF297F /* AdminUsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D4522929C06C00AF297F /* AdminUsersTableViewCell.swift */; };
+		AD44D46C2929C06C00AF297F /* BlockDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D4532929C06C00AF297F /* BlockDelegateProtocol.swift */; };
+		AD44D46D2929C06C00AF297F /* AdminUsersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D4542929C06C00AF297F /* AdminUsersTableView.swift */; };
+		AD44D46E2929C06C00AF297F /* AdminUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D4552929C06C00AF297F /* AdminUsersViewController.swift */; };
+		AD44D46F2929C06C00AF297F /* AdminUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D4562929C06C00AF297F /* AdminUsersView.swift */; };
+		AD44D4702929C06C00AF297F /* InputOutputUnregUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D4592929C06C00AF297F /* InputOutputUnregUsersView.swift */; };
+		AD44D4712929C06C00AF297F /* UnregUsersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D45A2929C06C00AF297F /* UnregUsersPresenter.swift */; };
+		AD44D4722929C06C00AF297F /* UnregUsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D45C2929C06C00AF297F /* UnregUsersModel.swift */; };
+		AD44D4732929C06C00AF297F /* UnregUsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D4602929C06C00AF297F /* UnregUsersTableViewController.swift */; };
+		AD44D4742929C06C00AF297F /* ApproveUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D4622929C06C00AF297F /* ApproveUserProtocol.swift */; };
+		AD44D4752929C06C00AF297F /* UnregUsersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D4632929C06C00AF297F /* UnregUsersTableView.swift */; };
+		AD44D4762929C06C00AF297F /* UnregUsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D4642929C06C00AF297F /* UnregUsersTableViewCell.swift */; };
+		AD44D4772929C06C00AF297F /* UnregUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D4652929C06C00AF297F /* UnregUsersViewController.swift */; };
+		AD44D4782929C06C00AF297F /* UnregUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D4662929C06C00AF297F /* UnregUsersView.swift */; };
 		ADE3341F292910B100DDB303 /* InternetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3341E292910B100DDB303 /* InternetService.swift */; };
 		ADE33421292910B200DDB303 /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE33420292910B200DDB303 /* PhotoService.swift */; };
 		ADE3343C292911E500DDB303 /* InputOutputBagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3342B292911E500DDB303 /* InputOutputBagView.swift */; };
@@ -119,6 +137,24 @@
 		AD44D3E029298CD500AF297F /* GlobalCurrenciesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalCurrenciesTableViewCell.swift; sourceTree = "<group>"; };
 		AD44D3E129298CD500AF297F /* GlobalCurrenciesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalCurrenciesTableView.swift; sourceTree = "<group>"; };
 		AD44D3E229298CD500AF297F /* MarketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
+		AD44D4492929C06C00AF297F /* InputOutputAdminUsersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputOutputAdminUsersView.swift; sourceTree = "<group>"; };
+		AD44D44A2929C06C00AF297F /* AdminUsersPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminUsersPresenter.swift; sourceTree = "<group>"; };
+		AD44D44C2929C06C00AF297F /* UsersModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
+		AD44D4502929C06C00AF297F /* AdminUsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminUsersTableViewController.swift; sourceTree = "<group>"; };
+		AD44D4522929C06C00AF297F /* AdminUsersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminUsersTableViewCell.swift; sourceTree = "<group>"; };
+		AD44D4532929C06C00AF297F /* BlockDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockDelegateProtocol.swift; sourceTree = "<group>"; };
+		AD44D4542929C06C00AF297F /* AdminUsersTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminUsersTableView.swift; sourceTree = "<group>"; };
+		AD44D4552929C06C00AF297F /* AdminUsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminUsersViewController.swift; sourceTree = "<group>"; };
+		AD44D4562929C06C00AF297F /* AdminUsersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminUsersView.swift; sourceTree = "<group>"; };
+		AD44D4592929C06C00AF297F /* InputOutputUnregUsersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputOutputUnregUsersView.swift; sourceTree = "<group>"; };
+		AD44D45A2929C06C00AF297F /* UnregUsersPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnregUsersPresenter.swift; sourceTree = "<group>"; };
+		AD44D45C2929C06C00AF297F /* UnregUsersModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnregUsersModel.swift; sourceTree = "<group>"; };
+		AD44D4602929C06C00AF297F /* UnregUsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnregUsersTableViewController.swift; sourceTree = "<group>"; };
+		AD44D4622929C06C00AF297F /* ApproveUserProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApproveUserProtocol.swift; sourceTree = "<group>"; };
+		AD44D4632929C06C00AF297F /* UnregUsersTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnregUsersTableView.swift; sourceTree = "<group>"; };
+		AD44D4642929C06C00AF297F /* UnregUsersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnregUsersTableViewCell.swift; sourceTree = "<group>"; };
+		AD44D4652929C06C00AF297F /* UnregUsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnregUsersViewController.swift; sourceTree = "<group>"; };
+		AD44D4662929C06C00AF297F /* UnregUsersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnregUsersView.swift; sourceTree = "<group>"; };
 		ADE3341E292910B100DDB303 /* InternetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetService.swift; sourceTree = "<group>"; };
 		ADE33420292910B200DDB303 /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
 		ADE3342B292911E500DDB303 /* InputOutputBagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputOutputBagView.swift; sourceTree = "<group>"; };
@@ -202,6 +238,8 @@
 		2C8F273B2927F67F0014B007 /* Pitaza170 */ = {
 			isa = PBXGroup;
 			children = (
+				AD44D4572929C06C00AF297F /* AdminApprove */,
+				AD44D4472929C06C00AF297F /* AdminUsers */,
 				AD44D3D429298CD500AF297F /* MarketView */,
 				AD44D3C1292989E400AF297F /* CurrencyInfoView */,
 				2C8F276C2927FAAA0014B007 /* AppGraph.swift */,
@@ -436,6 +474,134 @@
 			children = (
 				AD44D3E029298CD500AF297F /* GlobalCurrenciesTableViewCell.swift */,
 				AD44D3E129298CD500AF297F /* GlobalCurrenciesTableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD44D4472929C06C00AF297F /* AdminUsers */ = {
+			isa = PBXGroup;
+			children = (
+				AD44D4482929C06C00AF297F /* Presenter */,
+				AD44D44B2929C06C00AF297F /* Model */,
+				AD44D44D2929C06C00AF297F /* View */,
+			);
+			path = AdminUsers;
+			sourceTree = "<group>";
+		};
+		AD44D4482929C06C00AF297F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AD44D4492929C06C00AF297F /* InputOutputAdminUsersView.swift */,
+				AD44D44A2929C06C00AF297F /* AdminUsersPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AD44D44B2929C06C00AF297F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD44D44C2929C06C00AF297F /* UsersModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD44D44D2929C06C00AF297F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD44D44E2929C06C00AF297F /* AdminUsersTableViewSubModule */,
+				AD44D4552929C06C00AF297F /* AdminUsersViewController.swift */,
+				AD44D4562929C06C00AF297F /* AdminUsersView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD44D44E2929C06C00AF297F /* AdminUsersTableViewSubModule */ = {
+			isa = PBXGroup;
+			children = (
+				AD44D44F2929C06C00AF297F /* Controllers */,
+				AD44D4512929C06C00AF297F /* Views */,
+			);
+			path = AdminUsersTableViewSubModule;
+			sourceTree = "<group>";
+		};
+		AD44D44F2929C06C00AF297F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD44D4502929C06C00AF297F /* AdminUsersTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AD44D4512929C06C00AF297F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD44D4522929C06C00AF297F /* AdminUsersTableViewCell.swift */,
+				AD44D4532929C06C00AF297F /* BlockDelegateProtocol.swift */,
+				AD44D4542929C06C00AF297F /* AdminUsersTableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD44D4572929C06C00AF297F /* AdminApprove */ = {
+			isa = PBXGroup;
+			children = (
+				AD44D4582929C06C00AF297F /* Presenter */,
+				AD44D45B2929C06C00AF297F /* Model */,
+				AD44D45D2929C06C00AF297F /* View */,
+			);
+			path = AdminApprove;
+			sourceTree = "<group>";
+		};
+		AD44D4582929C06C00AF297F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AD44D4592929C06C00AF297F /* InputOutputUnregUsersView.swift */,
+				AD44D45A2929C06C00AF297F /* UnregUsersPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AD44D45B2929C06C00AF297F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD44D45C2929C06C00AF297F /* UnregUsersModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD44D45D2929C06C00AF297F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD44D45E2929C06C00AF297F /* UnregUsersTableViewSubModule */,
+				AD44D4652929C06C00AF297F /* UnregUsersViewController.swift */,
+				AD44D4662929C06C00AF297F /* UnregUsersView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD44D45E2929C06C00AF297F /* UnregUsersTableViewSubModule */ = {
+			isa = PBXGroup;
+			children = (
+				AD44D45F2929C06C00AF297F /* Controllers */,
+				AD44D4612929C06C00AF297F /* Views */,
+			);
+			path = UnregUsersTableViewSubModule;
+			sourceTree = "<group>";
+		};
+		AD44D45F2929C06C00AF297F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD44D4602929C06C00AF297F /* UnregUsersTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AD44D4612929C06C00AF297F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD44D4622929C06C00AF297F /* ApproveUserProtocol.swift */,
+				AD44D4632929C06C00AF297F /* UnregUsersTableView.swift */,
+				AD44D4642929C06C00AF297F /* UnregUsersTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -794,27 +960,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD44D4672929C06C00AF297F /* InputOutputAdminUsersView.swift in Sources */,
+				AD44D46D2929C06C00AF297F /* AdminUsersTableView.swift in Sources */,
+				AD44D4732929C06C00AF297F /* UnregUsersTableViewController.swift in Sources */,
 				AD44D3EA29298CD500AF297F /* MarketViewController.swift in Sources */,
 				2C0655DB292820E1006F79DA /* InsetsProvider.swift in Sources */,
+				AD44D4782929C06C00AF297F /* UnregUsersView.swift in Sources */,
+				AD44D4722929C06C00AF297F /* UnregUsersModel.swift in Sources */,
 				ADE3343E292911E500DDB303 /* UserCurrencyModel.swift in Sources */,
 				2CEEC3DB2929982600652C35 /* LabelFactory.swift in Sources */,
 				2C8F2779292813BB0014B007 /* LoginViewController.swift in Sources */,
+				AD44D46B2929C06C00AF297F /* AdminUsersTableViewCell.swift in Sources */,
 				AD44D3D1292989E400AF297F /* CurrencyInfoViewController.swift in Sources */,
 				2C8F276D2927FAAA0014B007 /* AppGraph.swift in Sources */,
+				AD44D4692929C06C00AF297F /* UsersModel.swift in Sources */,
 				ADE3341F292910B100DDB303 /* InternetService.swift in Sources */,
 				2C0655DD29282CA3006F79DA /* AuthenticationViewController.swift in Sources */,
 				ADE33445292911E500DDB303 /* CurrenciesTableViewCell.swift in Sources */,
+				AD44D4772929C06C00AF297F /* UnregUsersViewController.swift in Sources */,
+				AD44D4682929C06C00AF297F /* AdminUsersPresenter.swift in Sources */,
 				AD44D3E529298CD500AF297F /* GlobalCurrencyModel.swift in Sources */,
+				AD44D4712929C06C00AF297F /* UnregUsersPresenter.swift in Sources */,
 				2C0655DF292835B1006F79DA /* AuthenticationTextField.swift in Sources */,
+				AD44D4702929C06C00AF297F /* InputOutputUnregUsersView.swift in Sources */,
 				ADE33442292911E500DDB303 /* BalanceView.swift in Sources */,
 				ADE3343D292911E500DDB303 /* BagViewPresenter.swift in Sources */,
 				AD44D3E429298CD500AF297F /* MarketViewPresenter.swift in Sources */,
+				AD44D4752929C06C00AF297F /* UnregUsersTableView.swift in Sources */,
 				AD44D3E829298CD500AF297F /* GlobalCurrenciesTableViewCell.swift in Sources */,
 				2CEEC3AF29291E1900652C35 /* CAGradientLayer+Extension.swift in Sources */,
 				AD44D3D0292989E400AF297F /* CurrencyView.swift in Sources */,
 				AD44D3D329298CA400AF297F /* UIColorExt.swift in Sources */,
 				AD44D3E629298CD500AF297F /* MarketView.swift in Sources */,
 				2C8F273D2927F67F0014B007 /* AppDelegate.swift in Sources */,
+				AD44D46A2929C06C00AF297F /* AdminUsersTableViewController.swift in Sources */,
 				AD44D3E929298CD500AF297F /* GlobalCurrenciesTableView.swift in Sources */,
 				ADE33444292911E500DDB303 /* CurrenciesTableViewController.swift in Sources */,
 				2C8F273F2927F67F0014B007 /* SceneDelegate.swift in Sources */,
@@ -822,19 +1001,24 @@
 				ADE33441292911E500DDB303 /* BalanceViewController.swift in Sources */,
 				2CEEC3D52929964C00652C35 /* HistorySheetViewController.swift in Sources */,
 				AD44D3CD292989E400AF297F /* InputOutputCurInfoView.swift in Sources */,
+				AD44D46F2929C06C00AF297F /* AdminUsersView.swift in Sources */,
 				ADE3343C292911E500DDB303 /* InputOutputBagView.swift in Sources */,
 				ADE33446292911E500DDB303 /* CurrenciesTableView.swift in Sources */,
 				2CEEC3B129291E4000652C35 /* UIView+Extension.swift in Sources */,
+				AD44D4742929C06C00AF297F /* ApproveUserProtocol.swift in Sources */,
 				2C8F277E292816BF0014B007 /* AuthenticationButton.swift in Sources */,
 				AD44D3CC292989E400AF297F /* CurrencyViewPresenter.swift in Sources */,
 				AD44D3CF292989E400AF297F /* InfoCurViewController.swift in Sources */,
 				AD44D3E329298CD500AF297F /* InputOutputMarketView.swift in Sources */,
+				AD44D4762929C06C00AF297F /* UnregUsersTableViewCell.swift in Sources */,
+				AD44D46E2929C06C00AF297F /* AdminUsersViewController.swift in Sources */,
 				ADE33440292911E500DDB303 /* BagViewController.swift in Sources */,
 				ADE3343F292911E500DDB303 /* UserRubles.swift in Sources */,
 				2CEEC3D92929974900652C35 /* ProfileViewController.swift in Sources */,
 				ADE33443292911E500DDB303 /* BagView.swift in Sources */,
 				AD44D3CE292989E400AF297F /* InfoCurView.swift in Sources */,
 				2CEEC3D72929970B00652C35 /* ProfileBoard.swift in Sources */,
+				AD44D46C2929C06C00AF297F /* BlockDelegateProtocol.swift in Sources */,
 				AD44D3E729298CD500AF297F /* GlobalCurrenciesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
