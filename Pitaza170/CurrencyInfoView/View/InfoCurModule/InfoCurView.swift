@@ -20,7 +20,7 @@ final class InfoCurView: UIView {
     
     var nameLabel: UILabel = {
         var label = UILabel()
-        label.font = .systemFont(ofSize: 32, weight: .semibold)
+        label.font = .systemFont(ofSize: 32, weight: .bold)
         label.textAlignment = .left
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .white
@@ -31,6 +31,7 @@ final class InfoCurView: UIView {
         var label = UILabel()
         label.font = .systemFont(ofSize: 16, weight: .semibold)
         label.textAlignment = .left
+        label.numberOfLines = 4
         label.textColor = .systemGray
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -38,7 +39,7 @@ final class InfoCurView: UIView {
     
     var balanceLabel: UILabel = {
         var label = UILabel()
-        label.font = .systemFont(ofSize: 32, weight: .semibold)
+        label.font = .systemFont(ofSize: 32, weight: .bold)
         label.numberOfLines = 1
         label.textAlignment = .left
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -50,6 +51,7 @@ final class InfoCurView: UIView {
         var label = UILabel()
         label.font = .systemFont(ofSize: 16, weight: .semibold)
         label.textAlignment = .left
+        label.sizeToFit()
         label.numberOfLines = 1
         label.textColor = .systemGreen
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -80,35 +82,36 @@ final class InfoCurView: UIView {
     private func setupConstraints(){
         
         self.image.snp.makeConstraints { make in
-            make.top.equalToSuperview().inset(50)
-            make.left.equalToSuperview().inset(30)
+            make.top.equalToSuperview().inset(40)
+            make.left.equalToSuperview().inset(40)
             make.width.equalTo(45)
             make.height.equalTo(36)
         }
         
         self.nameLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().inset(52)
+            make.top.equalToSuperview().inset(40)
             make.left.equalTo(image.snp.right).inset(-10)
-            make.right.equalToSuperview().inset(30)
+            make.right.equalToSuperview().inset(40)
             make.height.equalTo(30)
         }
         
         self.descriptionLabel.snp.makeConstraints { make in
-            make.left.right.equalToSuperview().inset(30)
+            make.left.equalToSuperview().inset(40)
+            make.right.equalTo(self.snp.centerX)
             make.top.equalTo(image.snp.bottom).inset(-10)
             make.height.equalTo(36)
 
         }
         
         self.balanceLabel.snp.makeConstraints { make in
-            make.top.equalTo(descriptionLabel.snp.bottom).inset(-38)
-            make.left.right.equalToSuperview().inset(30)
+            make.top.equalTo(descriptionLabel.snp.bottom).inset(-50)
+            make.left.right.equalToSuperview().inset(40)
             make.height.equalTo(36)
         }
         
         self.growLabel.snp.makeConstraints { make in
-            make.top.equalTo(balanceLabel.snp.bottom).inset(10)
-            make.left.right.bottom.equalToSuperview().inset(30)
+            make.top.equalTo(balanceLabel.snp.bottom).inset(-5)
+            make.left.right.equalToSuperview().inset(40)
         }
     }
     

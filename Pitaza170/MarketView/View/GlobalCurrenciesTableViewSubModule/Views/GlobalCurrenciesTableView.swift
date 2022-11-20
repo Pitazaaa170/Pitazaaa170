@@ -16,6 +16,7 @@ final class GlobalCurrenciesTableView: UIView {
         tableView.showsVerticalScrollIndicator = false
         tableView.rowHeight = 55
         tableView.backgroundColor = nil
+        tableView.allowsSelection = true
         return tableView
     }()
     

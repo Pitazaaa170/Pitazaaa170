@@ -21,6 +21,10 @@ protocol BagViewInput {
 
 protocol BagViewOutput {
     
+    func didTapInputButton()
+    
+    func didTapOutputButton()
+    
     func viewDidLoadCurrencies()
     
     func viewDidLoadRubles()

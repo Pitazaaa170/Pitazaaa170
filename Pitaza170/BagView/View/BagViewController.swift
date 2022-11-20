@@ -20,8 +20,13 @@ final class BagViewController: UIViewController {
         button.titleLabel?.font = .systemFont(ofSize: 20, weight: .semibold)
         button.backgroundColor = UIColor(red: 58/255, green: 41/255, blue: 100/255, alpha: 1)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(inputRubles), for: .touchUpInside)
         return button
     }()
+    
+    @objc func inputRubles(){
+        presenter.didTapInputButton()
+    }
     
     var outputRublesButton: UIButton = {
         let button = UIButton()
@@ -29,8 +34,13 @@ final class BagViewController: UIViewController {
         button.titleLabel?.font = .systemFont(ofSize: 20, weight: .semibold)
         button.backgroundColor = UIColor(red: 38/255, green: 55/255, blue: 53/255, alpha: 1)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(outputRubles), for: .touchUpInside)
         return button
     }()
+    
+    @objc func outputRubles(){
+        presenter.didTapOutputButton()
+    }
     
     init(presenter: BagViewOutput) {
         self.presenter = presenter
@@ -72,13 +82,13 @@ final class BagViewController: UIViewController {
         self.view.addSubview(self.inputRublesButton)
         self.view.addSubview(self.outputRublesButton)
         self.inputRublesButton.snp.makeConstraints { make in
-            make.top.equalTo(self.balanceViewController.view.snp.bottom).inset(-20)
+            make.top.equalTo(self.balanceViewController.view.snp.bottom).inset(-15)
             make.left.equalToSuperview().inset(30)
             make.right.equalTo(self.view.snp.centerX).inset(15)
             make.height.equalTo(50)
         }
         self.outputRublesButton.snp.makeConstraints { make in
-            make.top.equalTo(self.inputRublesButton.snp.bottom).inset(-20)
+            make.top.equalTo(self.inputRublesButton.snp.bottom).inset(-15)
             make.left.equalToSuperview().inset(30)
             make.right.equalTo(self.view.snp.centerX).inset(15)
             make.height.equalTo(50)
@@ -86,14 +96,20 @@ final class BagViewController: UIViewController {
     }
     
     private func addCurrencuesTableViewController() {
-        self.addChild(currencuesTableViewController)
-        self.view.addSubview(currencuesTableViewController.view)
-        currencuesTableViewController.didMove(toParent: self)
-        self.currencuesTableViewController.view.snp.makeConstraints { make in
-            make.top.equalTo(self.outputRublesButton.snp.bottom).inset(-20)
-            make.left.right.equalToSuperview().inset(30)
-            make.bottom.equalToSuperview()
+        if let sheet = currencuesTableViewController.sheetPresentationController {
+            sheet.detents = [.medium(), .large()]
+            sheet.prefersGrabberVisible = true
+            currencuesTableViewController.isModalInPresentation = true
         }
+        
+//        self.addChild(currencuesTableViewController)
+//        self.view.addSubview(currencuesTableViewController.view)
+//        currencuesTableViewController.didMove(toParent: self)
+//        self.currencuesTableViewController.view.snp.makeConstraints { make in
+//            make.top.equalTo(self.outputRublesButton.snp.bottom).inset(-20)
+//            make.left.right.equalToSuperview().inset(30)
+//            make.bottom.equalToSuperview()
+//        }
     }
     
     override func viewDidLayoutSubviews() {
@@ -102,6 +118,8 @@ final class BagViewController: UIViewController {
         
         outputRublesButton.layer.cornerRadius = inputRublesButton.frame.height/2
         outputRublesButton.layer.masksToBounds = true
+        
+        self.present(currencuesTableViewController, animated: true)
     }
 }
 

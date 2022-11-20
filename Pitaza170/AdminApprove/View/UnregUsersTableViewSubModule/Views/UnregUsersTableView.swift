@@ -15,7 +15,7 @@ final class UnregUsersTableView: UIView {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.showsVerticalScrollIndicator = false
-        tableView.rowHeight = 100
+        tableView.rowHeight = 120
         tableView.backgroundColor = nil
         return tableView
     }()
@@ -49,7 +49,6 @@ final class UnregUsersTableView: UIView {
         self.clipsToBounds = true
         self.layer.cornerRadius = self.frame.width / 10
         self.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
-                
     }
    
     

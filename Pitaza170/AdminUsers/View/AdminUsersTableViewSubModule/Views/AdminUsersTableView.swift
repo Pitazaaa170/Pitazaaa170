@@ -15,7 +15,7 @@ final class AdminUsersTableView: UIView {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.showsVerticalScrollIndicator = false
-        tableView.rowHeight = 100
+        tableView.rowHeight = 120
         tableView.backgroundColor = nil
         return tableView
     }()
@@ -31,7 +31,7 @@ final class AdminUsersTableView: UIView {
         self.setupConstraints()
     }
     
-    private func setupSubViews(){
+    private func setupSubViews() {
         self.addSubview(self.tableView)
     }
     

@@ -53,7 +53,7 @@ class UnregUsersTableViewCell: UITableViewCell {
     }()
     
     @objc func approveUserButton() {
-        approveDelegate?.approveUser(id: id)
+        approveDelegate?.approveUser(id: id, clouser: nil)
     }
     
     var rejectButton: UIButton = {
@@ -67,7 +67,7 @@ class UnregUsersTableViewCell: UITableViewCell {
     }()
     
     @objc func rejectUserButton() {
-        approveDelegate?.rejectUser(id: id)
+        approveDelegate?.rejectUser(id: id, clouser: nil)
     }
     
     
@@ -91,42 +91,43 @@ class UnregUsersTableViewCell: UITableViewCell {
     private func setupConstraints(){
         
         self.nameLabel.snp.makeConstraints { make in
-            make.top.left.right.equalToSuperview().inset(5)
+            make.top.left.right.equalToSuperview().inset(10)
             make.height.equalTo(20)
         }
         
         self.descriptionLabel.snp.makeConstraints { make in
             make.top.equalTo(nameLabel.snp.bottom).inset(-5)
-            make.left.right.equalToSuperview().inset(5)
+            make.left.right.equalToSuperview().inset(10)
             make.height.equalTo(15)
         }
         
         self.approveButton.snp.makeConstraints { make in
-            make.top.equalTo(descriptionLabel.snp.bottom).inset(-5)
-            make.left.bottom.equalToSuperview().inset(5)
-            make.right.equalTo(contentView.snp.centerX).inset(-5)
-            make.height.equalTo(45)
+            make.top.equalTo(descriptionLabel.snp.bottom).inset(-10)
+            make.left.bottom.equalToSuperview().inset(10)
+            make.right.equalTo(contentView.snp.centerX).offset(-5)
+            make.height.equalTo(40)
         }
         
         self.rejectButton.snp.makeConstraints { make in
-            make.top.equalTo(descriptionLabel.snp.bottom).inset(-5)
-            make.right.bottom.equalToSuperview().inset(5)
-            make.left.equalTo(contentView.snp.centerX).inset(5)
-            make.height.equalTo(45)
+            make.top.equalTo(descriptionLabel.snp.bottom).inset(-10)
+            make.right.bottom.equalToSuperview().inset(10)
+            make.left.equalTo(contentView.snp.centerX).offset(5)
+            make.height.equalTo(40)
         }
         
     }
     
-    func configure(id: Int,name:String, surname:String, role:String){
+    func configure(id: Int,name:String, surname:String, role:String) {
+        self.id = id
         nameLabel.text = name + " " + surname
         descriptionLabel.text = role
     }
     
     override func layoutSubviews() {
         approveButton.layer.masksToBounds = true
-        approveButton.layer.cornerRadius = approveButton.frame.width / 2
+        approveButton.layer.cornerRadius = approveButton.frame.height / 2
         
         rejectButton.layer.masksToBounds = true
-        rejectButton.layer.cornerRadius = rejectButton.frame.width / 2
+        rejectButton.layer.cornerRadius = rejectButton.frame.height / 2
     }
 }

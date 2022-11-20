@@ -54,7 +54,7 @@ class AdminUsersTableViewCell: UITableViewCell {
     @objc func blockUser(sender: UIButton!){
         if sender.titleLabel?.text == "Заблокировать" {
             UIView.animate(withDuration: 0.5, delay: 0) {
-                self.blockButton.backgroundColor = .systemGray
+                self.blockButton.backgroundColor = .myWhite
                 self.blockButton.setTitle("Разблокировать", for: .normal)
             }
             blockDelegate?.blockUser(id: id)
@@ -87,35 +87,36 @@ class AdminUsersTableViewCell: UITableViewCell {
     private func setupConstraints(){
         
         self.nameLabel.snp.makeConstraints { make in
-            make.top.left.right.equalToSuperview().inset(5)
+            make.top.left.right.equalToSuperview().inset(10)
             make.height.equalTo(20)
         }
         
         self.descriptionLabel.snp.makeConstraints { make in
             make.top.equalTo(nameLabel.snp.bottom).inset(-5)
-            make.left.right.equalToSuperview().inset(5)
+            make.left.right.equalToSuperview().inset(10)
             make.height.equalTo(15)
         }
         
         self.blockButton.snp.makeConstraints { make in
-            make.top.equalTo(descriptionLabel.snp.bottom).inset(-5)
-            make.left.right.bottom.equalToSuperview().inset(5)
+            make.top.equalTo(descriptionLabel.snp.bottom).inset(-10)
+            make.left.right.bottom.equalToSuperview().inset(10)
             make.height.equalTo(45)
         }
         
     }
     
-    func configure(id: Int,name:String, surname:String, role:String, blocked:Bool){
+    func configure(id: Int,name: String, surname: String, role: String, blocked: Bool) {
+        self.id = id
         nameLabel.text = name + " " + surname
         descriptionLabel.text = role
         if blocked {
-            blockButton.backgroundColor = .systemGray
+            blockButton.backgroundColor = .myWhite
             blockButton.setTitle("Разблокировать", for: .normal)
         }
     }
     
     override func layoutSubviews() {
         blockButton.layer.masksToBounds = true
-        blockButton.layer.cornerRadius = blockButton.frame.width / 2
+        blockButton.layer.cornerRadius = blockButton.frame.height / 2
     }
 }

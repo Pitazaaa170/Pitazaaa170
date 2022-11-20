@@ -7,6 +7,7 @@ target 'Pitaza170' do
 
   # Pods for Pitaza170
 
+pod 'Charts'
 pod 'SwiftLint'
 pod 'SnapKit', '~> 5.6.0'
 

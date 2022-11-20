@@ -88,13 +88,13 @@ extension UnregUsersViewController: UnregUsersViewInput {
 }
 
 extension UnregUsersViewController: ApproveUserProtocol {
-    
-    func approveUser(id: Int) {
-        presenter.didApproveUser(id: id)
+    func approveUser(id: Int, clouser: (() -> Void)?) {
+        presenter.didApproveUser(id: id, clouser: clouser)
     }
     
-    func rejectUser(id: Int) {
-        presenter.didRejectUser(id: id)
+    func rejectUser(id: Int, clouser: (() -> Void)?) {
+        presenter.didRejectUser(id: id, clouser: clouser)
+
     }
     
 }

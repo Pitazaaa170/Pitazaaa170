@@ -17,7 +17,7 @@ protocol UnregUsersViewOutput {
     
     func viewDidLoadUnregUsers()
     
-    func didApproveUser(id:Int)
+    func didApproveUser(id: Int, clouser: (() -> Void)?)
     
-    func didRejectUser(id:Int)
+    func didRejectUser(id: Int, clouser: (() -> Void)?)
 }

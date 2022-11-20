@@ -49,7 +49,7 @@ class AdminUsersTableViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         view.applyGradient(
-            colors: [.green, .purple],
+            colors: [.myDarkGreen, .myDarkPurple],
             startPoint: .zero,
             endPoint: CGPoint(x: 1, y: 1)
         )

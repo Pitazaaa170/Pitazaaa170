@@ -63,7 +63,7 @@ final class CurrencyInfoViewController: UIViewController {
         self.infoCurModule.didMove(toParent: self)
         self.infoCurModule.view.snp.makeConstraints { make in
             make.top.left.right.equalToSuperview()
-            make.height.equalTo(400)
+            make.bottom.equalTo(view.snp.centerY).offset(-100)
         }
     }
     
@@ -74,13 +74,13 @@ final class CurrencyInfoViewController: UIViewController {
             make.top.equalTo(self.infoCurModule.view.snp.bottom).inset(-100)
             make.left.equalToSuperview().inset(30)
             make.height.equalTo(44)
-            make.width.equalTo(150)
+            make.right.equalTo(view.snp.centerX).offset(-15)
         }
         self.sellButton.snp.makeConstraints { make in
             make.top.equalTo(self.infoCurModule.view.snp.bottom).inset(-100)
             make.right.equalToSuperview().inset(30)
             make.height.equalTo(44)
-            make.width.equalTo(150)
+            make.left.equalTo(view.snp.centerX).offset(15)
         }
     }
     
@@ -108,7 +108,7 @@ extension CurrencyInfoViewController: CurrencyInfoViewInput {
                 if let text = alert.textFields?.first?.text,
                    let count = Int(text)
                 {
-                    self.presenter.didInputedToBuy(count: count)
+                    self.presenter.didBuy(count: count)
                 }
             }
             
@@ -132,7 +132,7 @@ extension CurrencyInfoViewController: CurrencyInfoViewInput {
                 if let text = alert.textFields?.first?.text,
                    let count = Int(text)
                 {
-                    self.presenter.didOutputedToSell(count: count)
+                    self.presenter.didSell(count: count)
                 }
             }
             

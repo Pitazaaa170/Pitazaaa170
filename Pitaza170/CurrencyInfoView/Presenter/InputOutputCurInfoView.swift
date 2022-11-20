@@ -23,7 +23,7 @@ protocol CurrencyInfoViewOutput {
     
     func didTapSellButton()
 
-    func didInputedToBuy(count: Int)
+    func didBuy(count: Int)
     
-    func didOutputedToSell(count: Int)
+    func didSell(count: Int)
 }

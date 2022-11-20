@@ -80,28 +80,31 @@ class GlobalCurrenciesTableViewCell: UITableViewCell {
         self.image.snp.makeConstraints { make in
             make.top.left.bottom.equalToSuperview().inset(5)
             make.width.equalTo(45)
+            
         }
         
         self.nameLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(5)
             make.left.equalTo(image.snp.right).inset(-10)
+
         }
         
         self.descriptionLabel.snp.makeConstraints { make in
             make.top.equalTo(nameLabel.snp.bottom).inset(5)
             make.left.equalTo(image.snp.right).inset(-10)
             make.bottom.equalToSuperview().inset(5)
+
         }
         
         self.balanceLabel.snp.makeConstraints { make in
             make.top.right.equalToSuperview().inset(5)
-            make.left.equalTo(nameLabel.snp.right).inset(5)
+            make.left.equalTo(contentView.snp.centerX)
         }
         
         self.growLabel.snp.makeConstraints { make in
             make.top.equalTo(balanceLabel.snp.bottom).inset(5)
             make.bottom.right.equalToSuperview().inset(5)
-            make.left.equalTo(descriptionLabel.snp.right).inset(5)
+            make.left.equalTo(contentView.snp.centerX)
         }
     }
     

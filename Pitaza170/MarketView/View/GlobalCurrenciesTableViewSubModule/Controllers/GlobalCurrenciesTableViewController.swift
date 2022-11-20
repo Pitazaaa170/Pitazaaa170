@@ -45,6 +45,7 @@ class GlobalCurrenciesTableViewController: UIViewController {
         setupTableView()
         photoService = PhotoService(container: currenciesTableView.tableView)
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tapGesture))
+        tapGesture.cancelsTouchesInView = false
         view.addGestureRecognizer(tapGesture)
     }
     
@@ -108,15 +109,30 @@ extension GlobalCurrenciesTableViewController: UITableViewDelegate, UITableViewD
         return cell
     }
     
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let presenter = CurrencyInfoViewPresenter()
+        guard let curr = globalCurrencies?[indexPath.row] else {return}
+        let infoViewController = CurrencyInfoViewController(presenter: presenter as CurrencyInfoViewOutput, info: curr)
+        presenter.viewInput = infoViewController as UIViewController & CurrencyInfoViewInput
+        DispatchQueue.main.async {
+            self.present(infoViewController, animated: true)
+        }
+    }
 }
 
 extension GlobalCurrenciesTableViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
                 
+        
         filtered = globalCurrencies?.filter({ (currency) -> Bool in
             return currency.name.contains(searchText)
         }) ?? []
-        searchActive = true
+        if filtered.isEmpty {
+            searchActive = false
+        } else {
+            searchActive = true
+        }
         self.currenciesTableView.tableView.reloadData()
     }
     

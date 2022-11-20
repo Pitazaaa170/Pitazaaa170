@@ -26,31 +26,37 @@ class UnregUsersViewPresenter {
         }
     }
     
-    private func approveUser(id: Int) {
+    private func approveUser(id: Int, clouser: (() -> Void)?) {
         internetService.putToApproveUser(id: id){ result in
-            
+            if result {
+                clouser?()
+            }
         }
     }
     
-    private func unblockUser(id: Int) {
+    private func unblockUser(id: Int, clouser: (() -> Void)?) {
         internetService.putToRejectUser(id: id){ result in
-            
+            if result {
+                clouser?()
+            }
         }
     }
     
 }
 
 extension UnregUsersViewPresenter: UnregUsersViewOutput {
+    func didApproveUser(id: Int, clouser: (() -> Void)?) {
+        self.approveUser(id: id, clouser: clouser)
+
+    }
+    
+    func didRejectUser(id: Int, clouser: (() -> Void)?) {
+        self.didRejectUser(id: id, clouser: clouser)
+
+    }
+    
     func viewDidLoadUnregUsers() {
         loadUnregUsers()
-    }
-    
-    func didApproveUser(id: Int) {
-        self.approveUser(id: id)
-    }
-    
-    func didRejectUser(id: Int) {
-        self.didRejectUser(id: id)
     }
 
 }

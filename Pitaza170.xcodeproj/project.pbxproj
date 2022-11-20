@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -62,6 +62,8 @@
 		AD44D4762929C06C00AF297F /* UnregUsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D4642929C06C00AF297F /* UnregUsersTableViewCell.swift */; };
 		AD44D4772929C06C00AF297F /* UnregUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D4652929C06C00AF297F /* UnregUsersViewController.swift */; };
 		AD44D4782929C06C00AF297F /* UnregUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D4662929C06C00AF297F /* UnregUsersView.swift */; };
+		AD44D47A2929CB1400AF297F /* NotificationCenterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D4792929CB1400AF297F /* NotificationCenterExtension.swift */; };
+		AD44D47D2929EFE800AF297F /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD44D47C2929EFE800AF297F /* ChartViewController.swift */; };
 		ADE3341F292910B100DDB303 /* InternetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3341E292910B100DDB303 /* InternetService.swift */; };
 		ADE33421292910B200DDB303 /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE33420292910B200DDB303 /* PhotoService.swift */; };
 		ADE3343C292911E500DDB303 /* InputOutputBagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3342B292911E500DDB303 /* InputOutputBagView.swift */; };
@@ -155,6 +157,8 @@
 		AD44D4642929C06C00AF297F /* UnregUsersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnregUsersTableViewCell.swift; sourceTree = "<group>"; };
 		AD44D4652929C06C00AF297F /* UnregUsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnregUsersViewController.swift; sourceTree = "<group>"; };
 		AD44D4662929C06C00AF297F /* UnregUsersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnregUsersView.swift; sourceTree = "<group>"; };
+		AD44D4792929CB1400AF297F /* NotificationCenterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterExtension.swift; sourceTree = "<group>"; };
+		AD44D47C2929EFE800AF297F /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		ADE3341E292910B100DDB303 /* InternetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetService.swift; sourceTree = "<group>"; };
 		ADE33420292910B200DDB303 /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
 		ADE3342B292911E500DDB303 /* InputOutputBagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputOutputBagView.swift; sourceTree = "<group>"; };
@@ -332,6 +336,7 @@
 				AD44D3D229298CA400AF297F /* UIColorExt.swift */,
 				2CEEC3AE29291E1900652C35 /* CAGradientLayer+Extension.swift */,
 				2CEEC3B029291E4000652C35 /* UIView+Extension.swift */,
+				AD44D4792929CB1400AF297F /* NotificationCenterExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -374,7 +379,6 @@
 			isa = PBXGroup;
 			children = (
 				AD44D3C2292989E400AF297F /* Presenter */,
-				AD44D3C5292989E400AF297F /* Model */,
 				AD44D3C6292989E400AF297F /* View */,
 			);
 			path = CurrencyInfoView;
@@ -389,16 +393,10 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		AD44D3C5292989E400AF297F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		AD44D3C6292989E400AF297F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AD44D47B2929EEDC00AF297F /* ChartView */,
 				AD44D3C7292989E400AF297F /* InfoCurModule */,
 				AD44D3CA292989E400AF297F /* CurrencyView.swift */,
 				AD44D3CB292989E400AF297F /* CurrencyInfoViewController.swift */,
@@ -606,6 +604,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		AD44D47B2929EEDC00AF297F /* ChartView */ = {
+			isa = PBXGroup;
+			children = (
+				AD44D47C2929EFE800AF297F /* ChartViewController.swift */,
+			);
+			path = ChartView;
+			sourceTree = "<group>";
+		};
 		ADE33429292911E500DDB303 /* BagView */ = {
 			isa = PBXGroup;
 			children = (
@@ -638,8 +644,8 @@
 			isa = PBXGroup;
 			children = (
 				ADE33431292911E500DDB303 /* BagViewController.swift */,
-				ADE33432292911E500DDB303 /* BalanceSubModule */,
 				ADE33435292911E500DDB303 /* BagView.swift */,
+				ADE33432292911E500DDB303 /* BalanceSubModule */,
 				ADE33436292911E500DDB303 /* CurrenciesTableViewSubModule */,
 			);
 			path = View;
@@ -789,7 +795,7 @@
 				};
 			};
 			buildConfigurationList = 2C8F27342927F67F0014B007 /* Build configuration list for PBXProject "Pitaza170" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -993,11 +999,13 @@
 				AD44D3D329298CA400AF297F /* UIColorExt.swift in Sources */,
 				AD44D3E629298CD500AF297F /* MarketView.swift in Sources */,
 				2C8F273D2927F67F0014B007 /* AppDelegate.swift in Sources */,
+				AD44D47D2929EFE800AF297F /* ChartViewController.swift in Sources */,
 				AD44D46A2929C06C00AF297F /* AdminUsersTableViewController.swift in Sources */,
 				AD44D3E929298CD500AF297F /* GlobalCurrenciesTableView.swift in Sources */,
 				ADE33444292911E500DDB303 /* CurrenciesTableViewController.swift in Sources */,
 				2C8F273F2927F67F0014B007 /* SceneDelegate.swift in Sources */,
 				ADE33421292910B200DDB303 /* PhotoService.swift in Sources */,
+				AD44D47A2929CB1400AF297F /* NotificationCenterExtension.swift in Sources */,
 				ADE33441292911E500DDB303 /* BalanceViewController.swift in Sources */,
 				2CEEC3D52929964C00652C35 /* HistorySheetViewController.swift in Sources */,
 				AD44D3CD292989E400AF297F /* InputOutputCurInfoView.swift in Sources */,
@@ -1189,6 +1197,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8B29PPTYV5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pitaza170/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1220,6 +1229,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8B29PPTYV5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pitaza170/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

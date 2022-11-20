@@ -9,7 +9,7 @@ import Foundation
 
 protocol ApproveUserProtocol: AnyObject {
     
-    func approveUser(id: Int)
+    func approveUser(id: Int, clouser: (() -> Void)?)
     
-    func rejectUser(id: Int)
+    func rejectUser(id: Int, clouser: (() -> Void)?)
 }

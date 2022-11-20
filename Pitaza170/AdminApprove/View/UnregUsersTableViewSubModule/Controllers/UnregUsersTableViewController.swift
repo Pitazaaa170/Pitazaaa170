@@ -49,7 +49,7 @@ class UnregUsersTableViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         view.applyGradient(
-            colors: [.green, .purple],
+            colors: [.myDarkGreen, .myDarkPurple],
             startPoint: .zero,
             endPoint: CGPoint(x: 1, y: 1)
         )
@@ -84,18 +84,23 @@ extension UnregUsersTableViewController: UITableViewDelegate, UITableViewDataSou
 }
 
 extension UnregUsersTableViewController: ApproveUserProtocol {
-    func approveUser(id: Int) {
-        approveDelegate?.approveUser(id: id)
-        if let index = unregUsers?.firstIndex(where: { $0.id == id}) {
-            unregUsers?.remove(at: index)
-        }
+    func approveUser(id: Int, clouser: (() -> Void)?) {
+        approveDelegate?.approveUser(id: id, clouser: {
+            clouser?()
+            if let index = self.unregUsers?.firstIndex(where: { $0.id == id}) {
+                self.unregUsers?.remove(at: index)
+            }
+        })
+        
     }
     
-    func rejectUser(id: Int) {
-        approveDelegate?.approveUser(id: id)
-        if let index = unregUsers?.firstIndex(where: { $0.id == id}) {
-            unregUsers?.remove(at: index)
-        }
+    func rejectUser(id: Int, clouser: (() -> Void)?) {
+        approveDelegate?.rejectUser(id: id, clouser: {
+            clouser?()
+            if let index = self.unregUsers?.firstIndex(where: { $0.id == id}) {
+                self.unregUsers?.remove(at: index)
+            }
+        })
     }
     
    

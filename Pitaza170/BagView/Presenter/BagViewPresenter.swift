@@ -13,6 +13,12 @@ class BagViewPresenter {
                 
     weak var viewInput: (UIViewController & BagViewInput)?
     
+    init(){
+        NotificationCenter.default.addObserver(self, selector: #selector(viewDidLoadRubles), name: NSNotification.Name.updateBag, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(viewDidLoadCurrencies), name: NSNotification.Name.updateBag, object: nil)
+    }
+
+    
     private func loadUserCurrencies(){
         internetService.loadUserCurrencies{ result in
             switch result {
@@ -43,11 +49,19 @@ class BagViewPresenter {
 
 extension BagViewPresenter: BagViewOutput {
     
-    func viewDidLoadRubles() {
+    func didTapInputButton() {
+        viewInput?.showInputRublesView()
+    }
+    
+    func didTapOutputButton() {
+        viewInput?.showOutputRublesView()
+    }
+    
+    @objc func viewDidLoadRubles() {
         self.loadUserRubles()
     }
     
-    func viewDidLoadCurrencies() {
+    @objc func viewDidLoadCurrencies() {
         self.loadUserCurrencies()
     }
     

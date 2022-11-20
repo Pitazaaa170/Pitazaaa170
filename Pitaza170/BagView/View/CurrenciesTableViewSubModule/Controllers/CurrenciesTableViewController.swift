@@ -90,4 +90,15 @@ extension CurrenciesTableViewController: UITableViewDelegate, UITableViewDataSou
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //ждем апишку
+//       let presenter = CurrencyInfoViewPresenter()
+//        guard let curr = globalCurrencies?[indexPath.row] else {return}
+//        let infoViewController = CurrencyInfoViewController(presenter: presenter as CurrencyInfoViewOutput, info: curr)
+//        presenter.viewInput = infoViewController as UIViewController & CurrencyInfoViewInput
+//        DispatchQueue.main.async {
+//            self.present(infoViewController, animated: true)
+//        }
+    }
+    
 }
