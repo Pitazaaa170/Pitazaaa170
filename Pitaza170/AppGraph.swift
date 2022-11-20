@@ -40,6 +40,6 @@ final class AppGraph: AppInerface {
         pres.viewInput = vc
         vc.currencuesTableViewController.globalCurrencies = [GlobalCurrency(image: url, name: "USD", description: "dollar", balance: "123.123", grow: "+123", positive: true)]
         let rootVC = vc //false ? bagVC : loginVC
-        self.init(rootViewController: ChartViewController())
+        self.init(rootViewController: NavigationMenuBaseController())
     }
 }
