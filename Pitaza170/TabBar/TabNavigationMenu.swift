@@ -21,7 +21,6 @@ class TabNavigationMenu: UIView {
     
     convenience init(menuItems: [TabItem], frame: CGRect) {
         self.init(frame: frame)
-        self.layer.backgroundColor = UIColor.white.cgColor
         for idx in 0 ..< menuItems.count {
             let itemWidth = self.frame.width / CGFloat(menuItems.count)
             let leadingAnchor = itemWidth * CGFloat(idx)
@@ -41,9 +40,13 @@ class TabNavigationMenu: UIView {
                 itemView.topAnchor.constraint(equalTo: self.topAnchor),
             ])
         }
+        backgroundColor = .myPurple
+        subviews.forEach { view in
+            view.backgroundColor = .myPurple
+        }
         self.setNeedsLayout()
         self.layoutIfNeeded()
-        self.activateTab(tab: 0) // activate the first tab
+        self.activateTab(tab: 2) // activate the first tab
     }
     
     // Create a custom nav menu item
@@ -69,7 +72,7 @@ class TabNavigationMenu: UIView {
             itemIconView.heightAnchor.constraint(equalToConstant: 25),
             itemIconView.widthAnchor.constraint(equalToConstant: 25),
             itemIconView.centerXAnchor.constraint(equalTo: tabBarItem.centerXAnchor),
-            itemIconView.topAnchor.constraint(equalTo: tabBarItem.topAnchor, constant: 8),
+            itemIconView.topAnchor.constraint(equalTo: tabBarItem.topAnchor, constant: 2),
             itemIconView.leadingAnchor.constraint(
                 equalTo: tabBarItem.leadingAnchor,
                 constant: 35
@@ -79,8 +82,8 @@ class TabNavigationMenu: UIView {
             itemTitleLabel.topAnchor.constraint(
                 equalTo: itemIconView.bottomAnchor,
                 constant: 4
-            )]
-        )
+            )
+        ])
         tabBarItem.addGestureRecognizer(
             UITapGestureRecognizer(
                 target: self,

@@ -38,7 +38,7 @@ final class BagViewController: UIViewController {
         return button
     }()
     
-    @objc func outputRubles(){
+    @objc func outputRubles() {
         presenter.didTapOutputButton()
     }
     
@@ -58,13 +58,11 @@ final class BagViewController: UIViewController {
         self.presenter.viewDidLoadRubles()
     }
     
-    
     // MARK: - Private
     
     private func configureUI() {
         self.addBalanceViewController()
         self.addButtons()
-        self.addCurrencuesTableViewController()
     }
     
     private func addBalanceViewController() {
@@ -95,23 +93,6 @@ final class BagViewController: UIViewController {
         }
     }
     
-    private func addCurrencuesTableViewController() {
-        if let sheet = currencuesTableViewController.sheetPresentationController {
-            sheet.detents = [.medium(), .large()]
-            sheet.prefersGrabberVisible = true
-            currencuesTableViewController.isModalInPresentation = true
-        }
-        
-//        self.addChild(currencuesTableViewController)
-//        self.view.addSubview(currencuesTableViewController.view)
-//        currencuesTableViewController.didMove(toParent: self)
-//        self.currencuesTableViewController.view.snp.makeConstraints { make in
-//            make.top.equalTo(self.outputRublesButton.snp.bottom).inset(-20)
-//            make.left.right.equalToSuperview().inset(30)
-//            make.bottom.equalToSuperview()
-//        }
-    }
-    
     override func viewDidLayoutSubviews() {
         inputRublesButton.layer.cornerRadius = inputRublesButton.frame.height/2
         inputRublesButton.layer.masksToBounds = true
@@ -119,7 +100,7 @@ final class BagViewController: UIViewController {
         outputRublesButton.layer.cornerRadius = inputRublesButton.frame.height/2
         outputRublesButton.layer.masksToBounds = true
         
-        self.present(currencuesTableViewController, animated: true)
+//        self.present(currencuesTableViewController, animated: true)
     }
 }
 

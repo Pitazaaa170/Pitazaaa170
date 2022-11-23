@@ -10,7 +10,7 @@ import SnapKit
 
 class NavigationMenuBaseController: UITabBarController {
     var customTabBar: TabNavigationMenu!
-    var tabBarHeight: CGFloat = 50
+    var tabBarHeight: CGFloat = 70
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +23,14 @@ class NavigationMenuBaseController: UITabBarController {
             self.viewControllers = controllers
         }
         self.selectedIndex = 0
+    }
+    
+    override func viewDidLayoutSubviews() {
+        view.applyGradient(
+            colors: [.myGreen, .myPurple],
+            startPoint: .zero,
+            endPoint: CGPoint(x: 1, y: 1)
+        )
     }
     
     private func setupCustomTabBar(

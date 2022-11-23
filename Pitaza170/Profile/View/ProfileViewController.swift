@@ -10,9 +10,6 @@ import UIKit
 final class ProfileViewController: UIViewController {
     // TODO: DI
     private let profileBoard = ProfileBoard(userLogin: " Василий Сидоров")
-    private let historySheetVC = HistorySheetVC(
-        historyTable: CurrenciesTableViewController()
-    )
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +29,6 @@ final class ProfileViewController: UIViewController {
         profileBoard.layer.sublayers?.forEach {
             $0.cornerRadius = radius
         }
-        present(historySheetVC, animated: true)
     }
 }
 

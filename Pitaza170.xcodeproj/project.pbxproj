@@ -23,7 +23,6 @@
 		2C8F277E292816BF0014B007 /* AuthenticationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F277D292816BF0014B007 /* AuthenticationButton.swift */; };
 		2CEEC3AF29291E1900652C35 /* CAGradientLayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEEC3AE29291E1900652C35 /* CAGradientLayer+Extension.swift */; };
 		2CEEC3B129291E4000652C35 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEEC3B029291E4000652C35 /* UIView+Extension.swift */; };
-		2CEEC3D52929964C00652C35 /* HistorySheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEEC3D42929964C00652C35 /* HistorySheetViewController.swift */; };
 		2CEEC3D72929970B00652C35 /* ProfileBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEEC3D62929970B00652C35 /* ProfileBoard.swift */; };
 		2CEEC3D92929974900652C35 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEEC3D82929974900652C35 /* ProfileViewController.swift */; };
 		2CEEC3DB2929982600652C35 /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEEC3DA2929982600652C35 /* LabelFactory.swift */; };
@@ -120,7 +119,6 @@
 		2C8F277D292816BF0014B007 /* AuthenticationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationButton.swift; sourceTree = "<group>"; };
 		2CEEC3AE29291E1900652C35 /* CAGradientLayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+Extension.swift"; sourceTree = "<group>"; };
 		2CEEC3B029291E4000652C35 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		2CEEC3D42929964C00652C35 /* HistorySheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistorySheetViewController.swift; path = Pitaza170/Profile/View/HistorySheetViewController.swift; sourceTree = SOURCE_ROOT; };
 		2CEEC3D62929970B00652C35 /* ProfileBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBoard.swift; sourceTree = "<group>"; };
 		2CEEC3D82929974900652C35 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2CEEC3DA2929982600652C35 /* LabelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
@@ -248,12 +246,12 @@
 		2C8F273B2927F67F0014B007 /* Pitaza170 */ = {
 			isa = PBXGroup;
 			children = (
+				2C8F276C2927FAAA0014B007 /* AppGraph.swift */,
 				2CEEC3DC292A108E00652C35 /* TabBar */,
 				AD44D4572929C06C00AF297F /* AdminApprove */,
 				AD44D4472929C06C00AF297F /* AdminUsers */,
 				AD44D3D429298CD500AF297F /* MarketView */,
 				AD44D3C1292989E400AF297F /* CurrencyInfoView */,
-				2C8F276C2927FAAA0014B007 /* AppGraph.swift */,
 				2CEEC3AC29291DE500652C35 /* CommonUI */,
 				ADE33429292911E500DDB303 /* BagView */,
 				2C8F27772928137F0014B007 /* Authentication */,
@@ -368,7 +366,6 @@
 		2CEEC3D22929960000652C35 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2CEEC3D42929964C00652C35 /* HistorySheetViewController.swift */,
 				2CEEC3D62929970B00652C35 /* ProfileBoard.swift */,
 				2CEEC3D82929974900652C35 /* ProfileViewController.swift */,
 			);
@@ -1027,7 +1024,6 @@
 				2CEEC3E0292A12F500652C35 /* NavigationBaseController.swift in Sources */,
 				AD44D47A2929CB1400AF297F /* NotificationCenterExtension.swift in Sources */,
 				ADE33441292911E500DDB303 /* BalanceViewController.swift in Sources */,
-				2CEEC3D52929964C00652C35 /* HistorySheetViewController.swift in Sources */,
 				AD44D3CD292989E400AF297F /* InputOutputCurInfoView.swift in Sources */,
 				AD44D46F2929C06C00AF297F /* AdminUsersView.swift in Sources */,
 				ADE3343C292911E500DDB303 /* InputOutputBagView.swift in Sources */,
