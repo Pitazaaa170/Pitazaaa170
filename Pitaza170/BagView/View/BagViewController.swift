@@ -24,7 +24,7 @@ final class BagViewController: UIViewController {
         return button
     }()
     
-    @objc func inputRubles(){
+    @objc func inputRubles() {
         presenter.didTapInputButton()
     }
     
@@ -37,6 +37,28 @@ final class BagViewController: UIViewController {
         button.addTarget(self, action: #selector(outputRubles), for: .touchUpInside)
         return button
     }()
+    
+    private let bagButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Bag", for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 20, weight: .semibold)
+        button.backgroundColor = UIColor(red: 58/255, green: 41/255, blue: 100/255, alpha: 1)
+        button.addTarget(
+            self,
+            action: #selector(bagButtonTapped(_:)), for: .touchUpInside
+        )
+        return button
+    }()
+    
+    @objc private func bagButtonTapped(_ sender: Any) {
+        // TODO: Add stick on top ?
+        let currencies = currencuesTableViewController
+        if let presentationController = currencies.presentationController
+            as? UISheetPresentationController {
+            presentationController.detents = [.medium(), .large()]
+        }
+        present(currencies, animated: true)
+    }
     
     @objc func outputRubles() {
         presenter.didTapOutputButton()
@@ -53,6 +75,7 @@ final class BagViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .black
         self.configureUI()
         self.presenter.viewDidLoadCurrencies()
         self.presenter.viewDidLoadRubles()
@@ -77,30 +100,38 @@ final class BagViewController: UIViewController {
     }
     
     private func addButtons() {
-        self.view.addSubview(self.inputRublesButton)
-        self.view.addSubview(self.outputRublesButton)
-        self.inputRublesButton.snp.makeConstraints { make in
-            make.top.equalTo(self.balanceViewController.view.snp.bottom).inset(-15)
+        view.addSubview(inputRublesButton)
+        inputRublesButton.snp.makeConstraints { make in
+            make.top.equalTo(balanceViewController.view.snp.bottom).inset(-15)
             make.left.equalToSuperview().inset(30)
-            make.right.equalTo(self.view.snp.centerX).inset(15)
+            make.right.equalTo(view.snp.centerX).inset(15)
             make.height.equalTo(50)
         }
-        self.outputRublesButton.snp.makeConstraints { make in
-            make.top.equalTo(self.inputRublesButton.snp.bottom).inset(-15)
+        view.addSubview(outputRublesButton)
+        outputRublesButton.snp.makeConstraints { make in
+            make.top.equalTo(inputRublesButton.snp.bottom).inset(-15)
             make.left.equalToSuperview().inset(30)
-            make.right.equalTo(self.view.snp.centerX).inset(15)
+            make.right.equalTo(view.snp.centerX).inset(15)
             make.height.equalTo(50)
+        }
+        view.addSubview(bagButton)
+        bagButton.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.bottom.equalToSuperview().offset(-100)
+            make.height.equalTo(50)
+            make.width.equalTo(100)
         }
     }
     
     override func viewDidLayoutSubviews() {
-        inputRublesButton.layer.cornerRadius = inputRublesButton.frame.height/2
+        inputRublesButton.layer.cornerRadius = inputRublesButton.frame.height / 2
         inputRublesButton.layer.masksToBounds = true
         
-        outputRublesButton.layer.cornerRadius = inputRublesButton.frame.height/2
+        outputRublesButton.layer.cornerRadius = inputRublesButton.frame.height / 2
         outputRublesButton.layer.masksToBounds = true
         
-//        self.present(currencuesTableViewController, animated: true)
+        bagButton.layer.cornerRadius = bagButton.frame.height / 2
+        bagButton.layer.masksToBounds = true
     }
 }
 
@@ -111,8 +142,7 @@ extension BagViewController: BagViewInput {
             let alert = UIAlertController(title: "Ввод рублей", message: nil, preferredStyle: .alert)
             let ok = UIAlertAction(title: "OK", style: .default){ (action: UIAlertAction) in
                 if let text = alert.textFields?.first?.text,
-                   let count = Int(text)
-                {
+                   let count = Int(text) {
                     self.presenter.didInputedRubles(count: count)
                 }
             }
@@ -135,8 +165,7 @@ extension BagViewController: BagViewInput {
             let alert = UIAlertController(title: "Вывод рублей", message: nil, preferredStyle: .alert)
             let ok = UIAlertAction(title: "OK", style: .default){ (action: UIAlertAction) in
                 if let text = alert.textFields?.first?.text,
-                   let count = Int(text)
-                {
+                   let count = Int(text) {
                     self.presenter.didOutputedRubles(count: count)
                 }
             }
@@ -166,6 +195,4 @@ extension BagViewController: BagViewInput {
             self.userCurrency = currency
         }
     }
-    
-    
 }

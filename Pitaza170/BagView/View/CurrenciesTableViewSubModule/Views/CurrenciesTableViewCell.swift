@@ -12,6 +12,7 @@ class CurrenciesTableViewCell: UITableViewCell {
     
     static let identifier: String = "CurrenciesCell"
 
+    // TODO: Refactor
     var image: UIImageView = {
         var image = UIImageView()
         image.contentMode = .scaleAspectFill

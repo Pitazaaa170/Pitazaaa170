@@ -19,6 +19,7 @@ class TabNavigationMenu: UIView {
         super.init(coder: aDecoder)
     }
     
+    // TODO: Refactor
     convenience init(menuItems: [TabItem], frame: CGRect) {
         self.init(frame: frame)
         for idx in 0 ..< menuItems.count {
